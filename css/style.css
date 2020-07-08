@@ -513,7 +513,7 @@ h2,
 }
 .title--left {
   position: relative;
-  padding-bottom: 32px;
+  padding-bottom: 25px;
 }
 .title--left::after {
   content: "";
@@ -548,7 +548,7 @@ h2,
       -ms-flex-align: center;
           align-items: center;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 .header__call {
   position: relative;
@@ -567,6 +567,7 @@ h2,
 }
 .header__tel {
   display: block;
+  margin-bottom: 5px;
   font-family: "TT Polls", serif;
   font-weight: bold;
   font-size: 20px;
@@ -594,7 +595,7 @@ h2,
 .header__basket {
   position: relative;
   display: block;
-  padding-left: 44px;
+  padding-left: 45px;
   font-size: 14px;
   line-height: 20px;
 }
@@ -634,7 +635,7 @@ h2,
 }
 .logo {
   font-size: 13px;
-  line-height: 20px;
+  line-height: 1;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
@@ -755,7 +756,7 @@ h2,
 }
 .menu__link {
   display: block;
-  padding: 20px 34px;
+  padding: 21px 34px;
   padding-right: 60px;
   line-height: 1;
   font-weight: 600;
@@ -883,12 +884,13 @@ h2,
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-top: 75px;
+  padding-top: 80px;
   padding-left: 100px;
 }
 .promo__info {
   width: 365px;
   margin-right: 20px;
+  padding-top: 10px;
   font-size: 18px;
   line-height: 20px;
   color: #272621;
@@ -909,7 +911,7 @@ h2,
   color: #272621;
 }
 .promo__btn {
-  margin-top: 40px;
+  margin-top: 55px;
   background-image: url(../img/images/bg-btn.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -949,15 +951,16 @@ h2,
           transform: rotate(180deg);
 }
 .promo__prev {
-  left: calc(50% - 600px);
+  left: calc(50% - 630px);
 }
 .promo__next {
-  right: calc(50% - 600px);
+  right: calc(50% - 630px);
 }
 .area {
-  padding-top: 20px;
+  padding-top: 35px;
   padding-bottom: 40px;
   background-color: #FAF7F5;
+  border-bottom: 1px dashed rgba(39, 38, 33, 0.3);
 }
 .area__list {
   margin: 0;
@@ -974,6 +977,7 @@ h2,
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 55px;
 }
 .area__item {
   margin-left: 29px;
@@ -1029,6 +1033,9 @@ h2,
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.area__link sup {
+  font-size: 12px;
+}
 .hit {
   padding-top: 20px;
   padding-bottom: 70px;
@@ -1037,6 +1044,9 @@ h2,
   margin-left: auto;
   margin-right: auto;
   margin-top: 60px;
+}
+.hit__slider {
+  margin-top: 35px;
 }
 .hit__slide {
   position: relative;
@@ -1076,8 +1086,8 @@ h2,
 }
 .hit__img {
   width: 100%;
-  height: 188px;
-  margin-bottom: 8px;
+  height: 165px;
+  margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1098,7 +1108,7 @@ h2,
 }
 .hit__title {
   margin-top: 0;
-  margin-bottom: 45px;
+  margin-bottom: 48px;
   font-family: "TT Polls", serif;
   font-size: 20px;
   line-height: 1.2;
@@ -1133,8 +1143,11 @@ h2,
   top: 40%;
 }
 .blog {
-  padding-top: 20px;
+  padding-top: 35px;
   padding-bottom: 70px;
+}
+.blog__slider {
+  margin-top: 35px;
 }
 .blog__slide {
   width: 370px;
@@ -1167,7 +1180,7 @@ h2,
 }
 .blog__title {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   font-family: "Oswald", serif;
   font-weight: 600;
   font-size: 18px;
@@ -1223,8 +1236,8 @@ h2,
 .blog__overlay::after {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 3px;
+  right: 10px;
   width: 35px;
   height: 15px;
   background-image: url(../img/icons/arrow.svg);
@@ -1232,9 +1245,10 @@ h2,
   background-size: contain;
 }
 .benefits {
-  padding-top: 20px;
+  padding-top: 35px;
   padding-bottom: 40px;
   background-color: #FAF7F5;
+  border-bottom: 1px dashed rgba(39, 38, 33, 0.3);
 }
 .benefits__list {
   margin: 0;
@@ -1246,6 +1260,7 @@ h2,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 60px;
 }
 .benefits__item {
   position: relative;
@@ -1303,8 +1318,11 @@ h2,
   background-size: 44px 55px;
 }
 .video {
-  padding-top: 20px;
-  padding-bottom: 70px;
+  padding-top: 35px;
+  padding-bottom: 55px;
+}
+.video .title {
+  font-size: 34px;
 }
 .video__wrap {
   display: -webkit-box;
@@ -1313,6 +1331,7 @@ h2,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 35px;
 }
 .video__right {
   width: 370px;
@@ -1425,7 +1444,7 @@ h2,
   color: #fff;
 }
 .info {
-  padding-top: 20px;
+  padding-top: 35px;
   padding-bottom: 70px;
   color: #fff;
   text-align: center;
@@ -1442,11 +1461,12 @@ h2,
   max-width: 715px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40px;
   font-size: 18px;
   line-height: 1.2;
 }
 .info__btn {
-  margin-top: 50px;
+  margin-top: 55px;
   margin-left: auto;
   margin-right: auto;
   width: 362px;
@@ -1459,7 +1479,7 @@ h2,
   border: 1px dashed #FFFFFF;
 }
 .diler {
-  padding-top: 85px;
+  padding-top: 88px;
   padding-bottom: 85px;
   background-image: url(../img/images/bg-2.jpg);
   background-repeat: no-repeat;
@@ -1484,8 +1504,10 @@ h2,
 .diler__title .title {
   margin-top: 15px;
   margin-bottom: 0;
+  line-height: 1.1;
 }
 .subtitle {
+  margin: 0;
   font-family: "Oswald", serif;
   font-weight: 600;
   font-size: 24px;
@@ -1495,8 +1517,8 @@ h2,
 }
 .diler__aside {
   position: absolute;
-  bottom: 100%;
-  right: -20px;
+  top: -30px;
+  right: 0;
   font-size: 13px;
   line-height: 1;
   color: #272621;
@@ -1516,7 +1538,7 @@ h2,
 }
 .diler__btn {
   width: 232px;
-  margin-left: 50px;
+  margin-right: 100px;
   font-family: "Oswald", serif;
   font-size: 18px;
   letter-spacing: 0.05em;
@@ -1527,7 +1549,15 @@ h2,
   background-color: #272621;
 }
 .footer .payment {
-  margin-top: 55px;
+  margin-top: 60px;
+}
+.footer .logo,
+.footer .logo img {
+  width: 100%;
+}
+.footer .logo {
+  margin-bottom: 30px;
+  font-size: 17px;
 }
 .footer__bottom,
 .footer__top {
@@ -1540,29 +1570,33 @@ h2,
 }
 .footer__bottom {
   padding-bottom: 20px;
-  padding-top: 25px;
+  padding-top: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.2;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 .footer__top {
   padding-top: 50px;
-  padding-bottom: 45px;
+  padding-bottom: 50px;
 }
 .footer__info {
   width: 250px;
+  margin-right: -15px;
   font-size: 13px;
   line-height: 1.2;
+}
+.footer__block {
+  padding-top: 15px;
 }
 .footer__block--contacts {
   width: 220px;
 }
 .footer__title {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   font-family: "TT Polls", serif;
   font-size: 22px;
   line-height: 24px;
@@ -1574,7 +1608,7 @@ h2,
   list-style: none;
 }
 .footer__menu li {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 .footer__menu li a:hover,
 .footer__menu li a:active {
@@ -1710,10 +1744,14 @@ h2,
           align-items: center;
   background-color: #000000;
 }
+.payment__item:last-child {
+  margin-right: 0;
+}
 .modal {
   width: 400px;
   max-width: 100%;
   padding: 20px 45px;
+  padding-top: 25px;
   background: #FFFFFF;
   border: 1px dashed rgba(26, 26, 26, 0.3);
   overflow: hidden;
@@ -1721,8 +1759,8 @@ h2,
 .modal::before {
   content: "";
   position: absolute;
-  top: -72px;
-  right: -72px;
+  top: -75px;
+  right: -75px;
   width: 144px;
   height: 144px;
   background: #272621;
@@ -1734,7 +1772,7 @@ h2,
   margin-bottom: 30px;
   font-family: "Oswald", serif;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 30px;
   line-height: 1.2;
   color: #DC1E1E;
@@ -1743,6 +1781,7 @@ h2,
   max-width: 260px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 65px;
   text-align: center;
   font-weight: 600;
   font-size: 18px;
@@ -1767,8 +1806,8 @@ h2,
 .form__field::after {
   content: "*";
   position: absolute;
-  right: 25px;
-  top: 20px;
+  right: 20px;
+  top: 23px;
   color: #DC1E1E;
   font-weight: 700;
   font-size: 20px;
@@ -1779,8 +1818,8 @@ h2,
 }
 .form__label {
   position: absolute;
-  top: -8px;
-  left: 20px;
+  top: -10px;
+  left: 14px;
   padding: 0 6px;
   color: #242B33;
   font-weight: 600;
@@ -1838,7 +1877,7 @@ h2,
 .form__checkbox-label::before {
   content: "";
   position: absolute;
-  top: 3px;
+  top: 5px;
   left: 0;
   width: 14px;
   height: 14px;
