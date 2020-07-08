@@ -1,0 +1,52 @@
+.modal {
+  width: 400px;
+  max-width: 100%;
+  padding: 20px 45px;
+  background: #FFFFFF;
+  border: 1px dashed rgba(26, 26, 26, 0.3);
+  overflow: hidden;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: -72px;
+    right: -72px;
+    width: 144px;
+    height: 144px;
+    background: #272621;
+    opacity: 0.05;
+    border-radius: 50%;
+  }
+}
+
+.modal__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: "Oswald", serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.2;
+  color: @red;
+}
+
+.modal__subtitle {
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: #272621;
+  opacity: 0.5;
+}
+
+.fancybox-close-small {
+  top: 5px;
+  right: 5px;
+  
+  svg {
+    opacity: 0.5;
+  }
+}
