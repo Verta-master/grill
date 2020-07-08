@@ -1424,3 +1424,289 @@ h2,
   line-height: 1;
   color: #fff;
 }
+.info {
+  padding-top: 20px;
+  padding-bottom: 70px;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  background-image: url(../img/images/bg-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.info .title {
+  color: #fff;
+}
+.info__text {
+  max-width: 715px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.info__btn {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 362px;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px dashed #FFFFFF;
+}
+.diler {
+  padding-top: 85px;
+  padding-bottom: 85px;
+  background-image: url(../img/images/bg-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.diler__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.diler__title {
+  max-width: 460px;
+  position: relative;
+}
+.diler__title .title {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.subtitle {
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #DC1E1E;
+}
+.diler__aside {
+  position: absolute;
+  bottom: 100%;
+  right: -20px;
+  font-size: 13px;
+  line-height: 1;
+  color: #272621;
+  opacity: 0.4;
+}
+.diler__aside::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -35px;
+  width: 27px;
+  height: 1px;
+  background-color: #272621;
+  opacity: 0.4;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.diler__btn {
+  width: 232px;
+  margin-left: 50px;
+  font-family: "Oswald", serif;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.footer {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #272621;
+}
+.footer .payment {
+  margin-top: 55px;
+}
+.footer__bottom,
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__bottom {
+  padding-bottom: 20px;
+  padding-top: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  line-height: 1.2;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.footer__top {
+  padding-top: 50px;
+  padding-bottom: 45px;
+}
+.footer__info {
+  width: 250px;
+  font-size: 13px;
+  line-height: 1.2;
+}
+.footer__block--contacts {
+  width: 220px;
+}
+.footer__title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: "TT Polls", serif;
+  font-size: 22px;
+  line-height: 24px;
+  color: #fff;
+}
+.footer__menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer__menu li {
+  margin-bottom: 10px;
+}
+.footer__menu li a:hover,
+.footer__menu li a:active {
+  color: #fff;
+  text-decoration: underline;
+}
+.footer__contacts {
+  position: relative;
+  padding-left: 40px;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 20px;
+}
+.footer__contacts b {
+  display: block;
+}
+.footer__contacts::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.footer__contacts--phones::before {
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/icons/phone-2.svg);
+}
+.footer__contacts--address {
+  margin-bottom: 20px;
+}
+.footer__contacts--address::before {
+  width: 16px;
+  height: 23px;
+  background-image: url(../img/icons/location.svg);
+}
+.footer__contacts--email::before {
+  width: 20px;
+  height: 15px;
+  background-image: url(../img/icons/mail.svg);
+}
+.footer__phone {
+  display: block;
+  margin-bottom: 7px;
+  font-family: "TT Polls", serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+}
+.footer__btn {
+  width: 175px;
+  height: 36px;
+  margin-top: 17px;
+  margin-bottom: 34px;
+  font-size: 14px;
+}
+.footer__mail:hover,
+.footer__mail:active {
+  text-decoration: underline;
+}
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.social__item {
+  margin-left: 20px;
+  opacity: 0.5;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.social__item:hover,
+.social__item:active {
+  opacity: 1;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.social__link {
+  width: 33px;
+  height: 33px;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.social__link--in {
+  background-image: url(../img/icons/instagram.svg);
+  background-size: 15px 14px;
+}
+.social__link--fb {
+  background-image: url(../img/icons/facebook.svg);
+  background-size: 9px 16px;
+}
+.social__link--ok {
+  background-image: url(../img/icons/ok.svg);
+  background-size: 11px 16px;
+}
+.social__link--vk {
+  background-image: url(../img/icons/vk.svg);
+  background-size: 18px 11px;
+}
+.payment {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.payment__item {
+  width: 56px;
+  height: 39px;
+  margin-right: 10px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000000;
+}
