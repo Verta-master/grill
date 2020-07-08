@@ -1,0 +1,99 @@
+.header {
+  background-color: #272621;
+  color: #fff;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header__call {
+  position: relative;
+  padding-left: 28px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/icons/phone.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.header__tel {
+  display: block;
+  font-family: "TT Polls", serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @red;
+    .transition();
+  }
+}
+
+.header__order {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  color: #DC1E1E;
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.header__basket {
+  position: relative;
+  display: block;
+  padding-left: 44px;
+  font-size: 14px;
+  line-height: 20px;
+
+  span {
+    display: block;
+  }
+  
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: block;
+    width: 26px;
+    height: 25px;
+    stroke: #fff;
+    .transition();
+  }
+  
+  &:hover,
+  &:active {
+    svg {
+      stroke: @red;
+      .transition();
+    }
+    .header__price {
+      color: @red;
+      .transition();
+    }
+  }
+}
+
+.header__price {
+  margin: 0;
+  font-weight: bold;
+  .transition();
+}
