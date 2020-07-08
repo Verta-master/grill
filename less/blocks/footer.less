@@ -1,0 +1,130 @@
+.footer {
+  color: rgba(255,255,255,0.5);
+  background-color: #272621;
+  
+  .payment {
+    margin-top: 55px;
+  }
+}
+
+.footer__bottom,
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__bottom {
+  padding-bottom: 20px;
+  padding-top: 25px;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.2;
+  border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+.footer__top {
+  padding-top: 50px;
+  padding-bottom: 45px;
+}
+
+.footer__info {
+  width: 250px;
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.footer__block--contacts {
+  width: 220px;
+}
+
+.footer__title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: "TT Polls", serif;
+  font-size: 22px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.footer__menu {
+  .reset();
+  list-style: none;
+  
+  li {
+    margin-bottom: 10px;
+    
+    a:hover,
+    a:active {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer__contacts {
+  position: relative;
+  padding-left: 40px;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 20px;
+  
+  b {
+    display: block;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &--phones::before {
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/icons/phone-2.svg);
+  }
+  
+  &--address {
+    margin-bottom: 20px;
+    
+    &::before {
+      width: 16px;
+      height: 23px;
+      background-image: url(../img/icons/location.svg);
+    }
+  }
+  
+  &--email::before {
+    width: 20px;
+    height: 15px;
+    background-image: url(../img/icons/mail.svg);
+  }
+}
+
+.footer__phone {
+  display: block;
+  margin-bottom: 7px;
+  font-family: "TT Polls", serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.footer__btn {
+  width: 175px;
+  height: 36px;
+  margin-top: 17px;
+  margin-bottom: 34px;
+  font-size: 14px;
+}
+
+.footer__mail {
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
