@@ -773,3 +773,122 @@ h2,
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.btn {
+  width: 210px;
+  max-width: 100%;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: #DC1E1E;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.btn:hover,
+.btn:active {
+  background-color: rgba(220, 30, 30, 0.75);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.promo__slider {
+  background-image: url(../img/images/bg-slide.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.promo__slide {
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.promo__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 75px;
+  padding-left: 100px;
+}
+.promo__info {
+  width: 365px;
+  margin-right: 20px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #272621;
+}
+.promo__img {
+  width: 650px;
+}
+.promo__img img {
+  display: block;
+}
+.promo__title {
+  margin-bottom: 30px;
+  font-family: "TT Polls", serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #272621;
+}
+.promo__btn {
+  margin-top: 40px;
+  background-image: url(../img/images/bg-btn.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.promo__control {
+  position: relative;
+}
+.promo__pagination {
+  bottom: 30px !important;
+  text-align: left;
+  padding-left: 100px;
+}
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin-right: 18px  !important;
+  margin-left: 0  !important;
+  outline: none;
+  border: 1px solid #272621;
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: #272621;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  outline: none;
+  width: 55px;
+  height: 53px;
+  background-image: url(../img/icons/next.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.swiper-button-prev {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.promo__prev {
+  left: calc(50% - 600px);
+}
+.promo__next {
+  right: calc(50% - 600px);
+}
