@@ -23,7 +23,7 @@
       </form>
       <div class="header__call">
         <a href="tel:+74999930784" class="header__tel">8 (499)-993-07-84</a>
-        <a href="#" class="header__order">Заказать звонок</a>
+        <a data-fancybox="" data-src="#call" href="javascript:;" class="header__order">Заказать звонок</a>
       </div>
       <a href="#" class="header__basket">
         <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -408,7 +408,7 @@
           <div class="footer__contacts footer__contacts--phones">
             <a href="tel:+74999930784" class="footer__phone">8 (499)-993-07-84</a>
             <a href="tel:+74950039721" class="footer__phone">8 (495)-003-97-21</a>
-            <a href="#" class="btn-border footer__btn">Заказать звонок</a>
+            <a data-fancybox="" data-src="#call" href="javascript:;" class="btn-border footer__btn">Заказать звонок</a>
           </div>
           <div class="footer__contacts footer__contacts--address">
             <b>Адрес</b>
@@ -439,6 +439,27 @@
       </div>
     </div>
   </footer>
+  
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Заказать звонок</p>
+    <p class="modal__subtitle">Укажите ваши контактные данные</p>
+    <form action="#" class="form">
+      <div class="form__field">
+        <label for="name" class="form__label">Ваше имя</label>
+        <input type="text" id="name" class="form__input" placeholder="Борис Джонсон" required="">
+      </div>
+      <div class="form__field">
+        <label for="tel" class="form__label">Ваш телефон</label>
+        <input type="tel" id="tel" class="form__input" placeholder="+7 900 800-70-60" required="">
+      </div>
+      <p class="form__comment">Поля обязательные для ввода <span>*</span></p>
+      <input type="checkbox" id="checkbox" class="form__checkbox">
+      <label for="checkbox" class="form__checkbox-label">Я не робот</label>
+      <button type="submit" class="btn form__btn">Заказать звонок</button>
+      <p class="form__bottom">Отправляя форму, я даю согласие на <a href="#">обработку персональных данных.</a></p>
+    </form>
+  </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
