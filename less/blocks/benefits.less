@@ -1,0 +1,69 @@
+.benefits {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: #FAF7F5;
+}
+
+.benefits__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits__item {
+  position: relative;
+  width: 200px;
+  margin-bottom: 20px;
+  padding-top: 126px;
+  font-family: "TT Polls", serif;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #272621;
+  
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid rgba(39,38,33,0.3);
+    border-radius: 50%;
+  }
+  &::before {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &::after {
+    top: -4px;
+    width: 108px;
+    height: 108px;
+    border-style: dashed;
+  }
+  
+  &:first-child::before {
+    background-image: url(../img/icons/icon-1.svg);
+    background-size: 48px 48px;
+  }
+  &:nth-child(2):before {
+    background-image: url(../img/icons/icon-2.svg);
+    background-size: 56px 57px;
+  }
+  &:nth-child(3):before {
+    background-image: url(../img/icons/icon-3.svg);
+    background-size: 54px 54px;
+  }
+  &:nth-child(4):before {
+    background-image: url(../img/icons/icon-4.svg);
+    background-size: 54px 54px;
+  }
+  &:nth-child(5):before {
+    background-image: url(../img/icons/icon-5.png);
+    background-size: 44px 55px;
+  }
+}
