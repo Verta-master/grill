@@ -1,0 +1,62 @@
+.area {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: #FAF7F5;
+}
+
+.area__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.area__item {
+  margin-left: 29px;
+  margin-right: 29px;
+  margin-bottom: 29px;
+}
+
+.area__link {
+  position: relative;
+  width: 112px;
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "TT Polls", serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1;
+  color: #272621;
+  text-align: center;
+  border: 2px solid rgba(39,38,33,0.3);
+  border-radius: 50%;
+  .transition();
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    bottom: -6px;
+    left: -6px;
+    right: -6px;
+    border: 2px dashed rgba(39,38,33,0.3);
+    border-radius: 50%;
+    .transition();
+  }
+  
+  &:hover,
+  &:active {
+    color: @red;
+    border-color: @red;
+    .transition();
+    
+    &::before {
+      border-color: @red;
+      .transition();
+    }
+  }
+}

@@ -176,8 +176,87 @@
     <section class="hit">
       <div class="wrapper">
         <p class="title title--deco">Хиты продаж</p>
-        
-        
+        <div class="swiper-container hit__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide hit__slide">
+              <div class="hit__labels">
+                <div class="hit__label"></div>
+              </div>
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/img-1.jpg" alt="Казан чугунный">
+                </figure>
+                <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+              </a>
+              <form action="#" class="hit__form">
+                <p class="hit__price">35 000р.</p>
+                <a href="#" class="btn-border hit__btn">Купить</a>
+              </form>
+            </div>
+            <div class="swiper-slide hit__slide">
+              <div class="hit__labels">
+                <div class="hit__label"></div>
+              </div>
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/img-2.jpg" alt="Казан чугунный">
+                </figure>
+                <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+              </a>
+              <form action="#" class="hit__form">
+                <p class="hit__price">35 000р.</p>
+                <a href="#" class="btn-border hit__btn">Купить</a>
+              </form>
+            </div>
+            <div class="swiper-slide hit__slide">
+              <div class="hit__labels">
+                <div class="hit__label"></div>
+              </div>
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/img-3.jpg" alt="Казан чугунный">
+                </figure>
+                <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+              </a>
+              <form action="#" class="hit__form">
+                <p class="hit__price">35 000р.</p>
+                <a href="#" class="btn-border hit__btn">Купить</a>
+              </form>
+            </div>
+            <div class="swiper-slide hit__slide">
+              <div class="hit__labels">
+                <div class="hit__label"></div>
+              </div>
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/img-4.jpg" alt="Казан чугунный">
+                </figure>
+                <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+              </a>
+              <form action="#" class="hit__form">
+                <p class="hit__price">35 000р.</p>
+                <a href="#" class="btn-border hit__btn">Купить</a>
+              </form>
+            </div>
+            <div class="swiper-slide hit__slide">
+              <div class="hit__labels">
+                <div class="hit__label"></div>
+              </div>
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/img-1.jpg" alt="Казан чугунный">
+                </figure>
+                <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+              </a>
+              <form action="#" class="hit__form">
+                <p class="hit__price">35 000р.</p>
+                <a href="#" class="btn-border hit__btn">Купить</a>
+              </form>
+            </div>
+          </div>
+          <div class="swiper-button-prev hit__prev"></div>
+          <div class="swiper-button-next hit__next"></div>
+        </div>
         <a href="#" class="btn-border hit__more">Смотреть все товары</a>
       </div>
     </section>
@@ -185,7 +264,39 @@
     <section class="blog">
       <div class="wrapper">
         <p class="title title--deco">Полезные статьи</p>
-        
+        <div class="swiper-container blog__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide blog__slide">
+              <a href="#" class="blog__link">
+                <p class="blog__title">Кийма шашлык из баранины</p>
+                <figure class="blog__img">
+                  <img src="img/images/blog-1.jpg" alt="Полезные статьи">
+                </figure>
+                <div class="blog__overlay">Секрет приготовления шашлыка</div>
+              </a>
+            </div>
+            <div class="swiper-slide blog__slide">
+              <a href="#" class="blog__link">
+                <p class="blog__title">Бифштекс из телятины</p>
+                <figure class="blog__img">
+                  <img src="img/images/blog-2.jpg" alt="Полезные статьи">
+                </figure>
+                <div class="blog__overlay">Секрет приготовления шашлыка</div>
+              </a>
+            </div>
+            <div class="swiper-slide blog__slide">
+              <a href="#" class="blog__link">
+                <p class="blog__title">Кийма шашлык из баранины</p>
+                <figure class="blog__img">
+                  <img src="img/images/blog-3.jpg" alt="Полезные статьи">
+                </figure>
+                <div class="blog__overlay">Секрет приготовления шашлыка</div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-prev blog__prev"></div>
+          <div class="swiper-button-next blog__next"></div>
+        </div>
       </div>
     </section>
     
@@ -304,6 +415,7 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="js/blog.js"></script>
   
   <!-- Sliders -->
   <script>
@@ -320,6 +432,29 @@
       preventClicks: false,
       preventClicksPropagation: false,
     });
+    
+    var newsSwiper2 = new Swiper ('.hit__slider', {
+      navigation: {
+        nextEl: '.hit__next',
+        prevEl: '.hit__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      spaceBetween: 30,
+      slidesPerView: 4,
+        breakpoints: {
+          1022: {
+            slidesPerView: 3,
+          },
+          766: {
+            slidesPerView: 2,
+          },
+          480: {
+            slidesPerView: 1,
+          }
+        }
+    })
   </script>
 </body>
 </html>
