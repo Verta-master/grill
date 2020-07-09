@@ -113,65 +113,70 @@
         
         <div class="filter">
           <div class="filter__btns">
-            <button type="button" class="filter__btn filter__btn--filtering">
+            <button type="button" class="filter__btn">
               <span>Фильтр</span>
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"/>
               </svg>
             </button>
-            <button type="button" class="filter__btn filter__btn--sorting">
+            <div class="filter__drop">
+              <div class="filter__line">
+                <span class="filter__text">Фильтр:</span>
+                <div class="filter__item">
+                  <button type="button" class="filter__btn filter__btn--price">
+                    <span>Цена</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"/>
+                    </svg>
+                  </button>
+                  <div class="filter__drop filter__drop--range">
+                    <div class="filter__range-wrap">
+                      <div class="filter__inputs">
+                        <input type="text" id="amount-min" class="filter__input">
+                        <input type="text" id="amount-max" class="filter__input">
+                      </div>
+                      <div class="filter__range">
+                        <div id="slider-range"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter__item">
+                  <button type="button" class="filter__btn filter__btn--volume">
+                    <span>Объём</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"/>
+                    </svg>
+                  </button>
+                  <div class="filter__drop filter__drop--range">
+                    <div class="filter__range-wrap">
+                      <div class="filter__inputs">
+                        <input type="text" id="amount-min2" class="filter__input">
+                        <input type="text" id="amount-max2" class="filter__input">
+                      </div>
+                      <div class="filter__range">
+                        <div id="slider-range2"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="filter__clear">Очистить всё</a>
+              </div>
+            </div>
+            
+            <button type="button" class="filter__btn">
               <span>Сортировка</span>
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"/>
               </svg>
             </button>
-          </div>
-          <div class="filter__drop filter__drop--filtering">
-            <div class="filter__line">
-              <span class="filter__text">Фильтр:</span>
-              <div class="filter__item">
-                <button type="button" class="filter__btn filter__btn--price">
-                  <span>Цена</span>
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"/>
-                  </svg>
-                </button>
-                <div class="filter__drop">
-                  <div class="filter__inputs">
-                    <input type="text" id="amount-min" class="filter__input">
-                    <input type="text" id="amount-max" class="filter__input">
-                  </div>
-                  <div class="filter__range">
-                    <div id="slider-range"></div>
-                  </div>
-                </div>
+            <div class="filter__drop">
+              <div class="filter__wrap">
+                <input type="radio" id="radio1" name="radio" class="filter__radio" checked>
+                <label for="radio1" class="filter__radio-label">Цена по убывнию</label>
+                <input type="radio" id="radio2" name="radio" class="filter__radio">
+                <label for="radio2" class="filter__radio-label">Цена по возрастанию</label>
               </div>
-              <div class="filter__item">
-                <button type="button" class="filter__btn filter__btn--volume">
-                  <span>Объём</span>
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"/>
-                  </svg>
-                </button>
-                <div class="filter__drop">
-                  <div class="filter__inputs">
-                    <input type="text" id="amount-min2" class="filter__input">
-                    <input type="text" id="amount-max2" class="filter__input">
-                  </div>
-                  <div class="filter__range">
-                    <div id="slider-range2"></div>
-                  </div>
-                </div>
-              </div>
-              <a href="#" class="filter__clear">Очистить всё</a>
-            </div>
-          </div>
-          <div class="filter__drop filter__drop--sorting">
-            <div class="filter__wrap">
-              <input type="radio" id="radio1" name="radio" class="form__radio" checked>
-              <label for="radio1" class="form__radio-label">Цена по убывнию</label>
-              <input type="radio" id="radio2" name="radio" class="form__checkbox">
-              <label for="radio2" class="form__radio-label">Цена по возрастанию</label>
             </div>
           </div>
         </div>
@@ -473,5 +478,13 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/jquery.ui.touch-punch.min.js"></script>
   <script src="js/range.js"></script>
+  
+  <!-- Filter -->
+  <script>
+    $('.filter__btn').click(function() {
+      $(this).next().slideToggle();
+      $(this).toggleClass('filter__btn--active');
+    })
+  </script>
 </body>
 </html>

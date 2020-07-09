@@ -3,11 +3,13 @@
 }
 
 .filter__btns {
+  position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-bottom: 28px;
-  border-bottom: 1px dashed #272621;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  border-bottom: 1px dashed rgba(39,38,33,0.2);
 }
 
 .filter__btn {
@@ -47,4 +49,175 @@
 
 .filter__drop {
   display: none;
+  position: absolute;
+  z-index: 500;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-bottom: 1px dashed rgba(39,38,33,0.2);
+  
+  &--range {
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+}
+
+.filter__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.filter__radio {
+  display: none;
+}
+
+.filter__radio-label {
+  display: block;
+  position: relative;
+  margin-right: 60px;
+  padding-left: 50px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #272621;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px 15px;
+    border: 1px solid rgba(26, 26, 26, 0.5);
+  }
+}
+
+.filter__radio:checked + .filter__radio-label::before {
+  background-color: @red;
+  background-image: url(../img/icons/tick.svg);
+  border-color: @red;
+}
+
+.filter__line {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #272621;
+  border-bottom: 1px dashed rgba(39,38,33,0.2);
+}
+
+.filter__text {
+  margin-right: 100px;
+}
+
+.filter__clear {
+  margin-left: auto;
+  text-decoration: underline;
+  opacity: 0.5;
+  
+  &:hover,
+  &:active {
+    opacity: 1;
+    color: @red;
+  }
+}
+
+.filter__range-wrap {
+  width: 400px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter__inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.filter__input {
+  width: 150px;
+  height: 40px;
+  padding: 0 18px;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid rgba(26, 26, 26, 0.3);
+}
+
+.filter__range {
+  .ui-slider {
+    position: relative;
+  }
+  /* Ползунок */
+  .ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 4px solid #272621;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    
+    &:last-of-type {
+      border-color: @red;
+    }
+  }
+  .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden;
+  }
+  /* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+  .ui-slider-horizontal {
+    height: 4px;
+  }
+  /* позиционируем ползунки */
+  .ui-slider-horizontal .ui-slider-handle { 
+    top: -8px;
+    margin-left: -8px;
+  }
+  .ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+  }
+  .ui-slider-horizontal .ui-slider-range-min { 
+    left: 0;
+  }
+  .ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+  }
+  /* оформление полосы по которой ходит ползунок */
+  .ui-widget-content { 
+    border: 1px solid rgba(39,38,33,0.5);
+    background-color: rgba(39,38,33,0.5);
+  }
+  /* оформление активного участка (между двумя ползунками) */
+  .ui-widget-header { 
+    border: 1px solid @red;
+    background-color: @red;
+    background-image: linear-gradient(90.64deg, #1A1A1A 0.01%, #DC1E1E 100%);
+  }
+  /* скругление для полосы слайдера */
+  .ui-corner-all {
+    border-radius: 3px;
+  }
+  .ui-widget.ui-widget-content {
+    border: 0;
+  }
 }
