@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ModuleGrill</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__top">
+      <a href="#" class="logo">
+        <img src="img/images/logo.png" alt="Logo">
+        <strong>Производитель беседок</strong>
+      </a>
+      <form action="#" class="search">
+        <input type="text" class="search__input" placeholder="Поиск по сайту">
+        <button type="submit" class="search__btn"></button>
+      </form>
+      <div class="header__call">
+        <a href="tel:+74999930784" class="header__tel">8 (499)-993-07-84</a>
+        <a data-fancybox="" data-src="#call" href="javascript:;" class="header__order">Заказать звонок</a>
+      </div>
+      <a href="#" class="header__basket">
+        <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.85882 7.85577L24.6797 7.85577L22.5922 24H3.94636L1.85882 7.85577Z" stroke-width="2"></path>
+          <path d="M19.125 9.36538C19.125 6.13133 19.0129 1 13.2693 1C7.52561 1 7.41351 6.13133 7.41351 9.36538" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+        <span>Корзина</span>
+        <p class="header__price">5 870 Р</p>
+      </a>
+    </div>
+    <nav class="menu">
+      <div class="wrapper">
+        <button type="button" class="menu__btn"></button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Беседки</a>
+            <button type="button" class="menu__down">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"></path>
+              </svg>
+            </button>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Категория 1</a></li>
+              <li class="menu__subitem"><a href="#">Категория 2</a></li>
+              <li class="menu__subitem"><a href="#">Категория 3</a></li>
+              <li class="menu__subitem"><a href="#">Категория 4</a></li>
+              <li class="menu__subitem"><a href="#">Категория 5</a></li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Мангалы</a>
+            <button type="button" class="menu__down">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"></path>
+              </svg>
+            </button>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Категория 1</a></li>
+              <li class="menu__subitem"><a href="#">Категория 2</a></li>
+              <li class="menu__subitem"><a href="#">Категория 3</a></li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Казаны</a>
+            <button type="button" class="menu__down">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"></path>
+              </svg>
+            </button>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Категория 1</a></li>
+              <li class="menu__subitem"><a href="#">Категория 2</a></li>
+              <li class="menu__subitem"><a href="#">Категория 3</a></li>
+              <li class="menu__subitem"><a href="#">Категория 4</a></li>
+              <li class="menu__subitem"><a href="#">Категория 5</a></li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Тандыры</a>
+            <button type="button" class="menu__down">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"></path>
+              </svg>
+            </button>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Категория 1</a></li>
+              <li class="menu__subitem"><a href="#">Категория 2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <nav class="breadcrumbs">
+      <div class="wrapper">
+        <a href="#" class="breadcrumbs__link">Главная</a>
+        <a href="#" class="breadcrumbs__link">Каталог</a>
+        <span class="breadcrumbs__link">Казан чугунный 12 литров (дно круглое)</span>
+      </div>
+    </nav>
+    
+    <section class="catalog">
+      <div class="wrapper">
+        <h1 class="title">Каталог товаров</h1>
+        
+        <div class="filter">
+          <div class="filter__btns">
+            <button type="button" class="filter__btn filter__btn--filtering">
+              <span>Фильтр</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"></path>
+              </svg>
+            </button>
+            <button type="button" class="filter__btn filter__btn--sorting">
+              <span>Сортировка</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="filter__drop filter__drop--filtering">
+            <div class="filter__line">
+              <span class="filter__text">Фильтр:</span>
+              <div class="filter__item">
+                <button type="button" class="filter__btn filter__btn--price">
+                  <span>Цена</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"></path>
+                  </svg>
+                </button>
+                <div class="filter__drop">
+                  <div class="filter__inputs">
+                    <input type="text" id="amount-min" class="filter__input">
+                    <input type="text" id="amount-max" class="filter__input">
+                  </div>
+                  <div class="filter__range">
+                    <div id="slider-range"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__item">
+                <button type="button" class="filter__btn filter__btn--volume">
+                  <span>Объём</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"></path>
+                  </svg>
+                </button>
+                <div class="filter__drop">
+                  <div class="filter__inputs">
+                    <input type="text" id="amount-min2" class="filter__input">
+                    <input type="text" id="amount-max2" class="filter__input">
+                  </div>
+                  <div class="filter__range">
+                    <div id="slider-range2"></div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="filter__clear">Очистить всё</a>
+            </div>
+          </div>
+          <div class="filter__drop filter__drop--sorting">
+            <div class="filter__wrap">
+              <input type="radio" id="radio1" name="radio" class="form__radio" checked="">
+              <label for="radio1" class="form__radio-label">Цена по убывнию</label>
+              <input type="radio" id="radio2" name="radio" class="form__checkbox">
+              <label for="radio2" class="form__radio-label">Цена по возрастанию</label>
+            </div>
+          </div>
+        </div>
+        
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <div class="hit__labels">
+              <div class="hit__label"></div>
+            </div>
+            <a href="#" class="hit__link">
+              <figure class="hit__img">
+                <img src="img/images/img-1.jpg" alt="Казан чугунный">
+              </figure>
+              <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+            </a>
+            <form action="#" class="hit__form">
+              <p class="hit__price">35 000р.</p>
+              <a href="#" class="btn-border hit__btn">Купить</a>
+            </form>
+          </li>
+          <li class="catalog__item">
+            <div class="hit__labels">
+              <div class="hit__label"></div>
+            </div>
+            <a href="#" class="hit__link">
+              <figure class="hit__img">
+                <img src="img/images/img-2.jpg" alt="Казан чугунный">
+              </figure>
+              <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+            </a>
+            <form action="#" class="hit__form">
+              <p class="hit__price">35 000р.</p>
+              <a href="#" class="btn-border hit__btn">Купить</a>
+            </form>
+          </li>
+          <li class="catalog__item">
+            <div class="hit__labels">
+              <div class="hit__label"></div>
+            </div>
+            <a href="#" class="hit__link">
+              <figure class="hit__img">
+                <img src="img/images/img-3.jpg" alt="Казан чугунный">
+              </figure>
+              <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+            </a>
+            <form action="#" class="hit__form">
+              <p class="hit__price">35 000р.</p>
+              <a href="#" class="btn-border hit__btn">Купить</a>
+            </form>
+          </li>
+          <li class="catalog__item">
+            <div class="hit__labels">
+              <div class="hit__label"></div>
+            </div>
+            <a href="#" class="hit__link">
+              <figure class="hit__img">
+                <img src="img/images/img-4.jpg" alt="Казан чугунный">
+              </figure>
+              <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+            </a>
+            <form action="#" class="hit__form">
+              <p class="hit__price">35 000р.</p>
+              <a href="#" class="btn-border hit__btn">Купить</a>
+            </form>
+          </li>
+          <li class="catalog__item">
+            <div class="hit__labels">
+              <div class="hit__label"></div>
+            </div>
+            <a href="#" class="hit__link">
+              <figure class="hit__img">
+                <img src="img/images/img-1.jpg" alt="Казан чугунный">
+              </figure>
+              <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+            </a>
+            <form action="#" class="hit__form">
+              <p class="hit__price">35 000р.</p>
+              <a href="#" class="btn-border hit__btn">Купить</a>
+            </form>
+          </li>
+          <li class="catalog__item">
+            <div class="hit__labels">
+              <div class="hit__label"></div>
+            </div>
+            <a href="#" class="hit__link">
+              <figure class="hit__img">
+                <img src="img/images/img-2.jpg" alt="Казан чугунный">
+              </figure>
+              <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+            </a>
+            <form action="#" class="hit__form">
+              <p class="hit__price">35 000р.</p>
+              <a href="#" class="btn-border hit__btn">Купить</a>
+            </form>
+          </li>
+          <li class="catalog__item">
+            <div class="hit__labels">
+              <div class="hit__label"></div>
+            </div>
+            <a href="#" class="hit__link">
+              <figure class="hit__img">
+                <img src="img/images/img-3.jpg" alt="Казан чугунный">
+              </figure>
+              <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+            </a>
+            <form action="#" class="hit__form">
+              <p class="hit__price">35 000р.</p>
+              <a href="#" class="btn-border hit__btn">Купить</a>
+            </form>
+          </li>
+          <li class="catalog__item">
+            <div class="hit__labels">
+              <div class="hit__label"></div>
+            </div>
+            <a href="#" class="hit__link">
+              <figure class="hit__img">
+                <img src="img/images/img-4.jpg" alt="Казан чугунный">
+              </figure>
+              <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+            </a>
+            <form action="#" class="hit__form">
+              <p class="hit__price">35 000р.</p>
+              <a href="#" class="btn-border hit__btn">Купить</a>
+            </form>
+          </li>
+          <li class="catalog__item">
+            <div class="hit__labels">
+              <div class="hit__label"></div>
+            </div>
+            <a href="#" class="hit__link">
+              <figure class="hit__img">
+                <img src="img/images/img-1.jpg" alt="Казан чугунный">
+              </figure>
+              <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+            </a>
+            <form action="#" class="hit__form">
+              <p class="hit__price">35 000р.</p>
+              <a href="#" class="btn-border hit__btn">Купить</a>
+            </form>
+          </li>
+          <li class="catalog__item">
+            <div class="hit__labels">
+              <div class="hit__label"></div>
+            </div>
+            <a href="#" class="hit__link">
+              <figure class="hit__img">
+                <img src="img/images/img-2.jpg" alt="Казан чугунный">
+              </figure>
+              <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+            </a>
+            <form action="#" class="hit__form">
+              <p class="hit__price">35 000р.</p>
+              <a href="#" class="btn-border hit__btn">Купить</a>
+            </form>
+          </li>
+          <li class="catalog__item">
+            <div class="hit__labels">
+              <div class="hit__label"></div>
+            </div>
+            <a href="#" class="hit__link">
+              <figure class="hit__img">
+                <img src="img/images/img-3.jpg" alt="Казан чугунный">
+              </figure>
+              <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+            </a>
+            <form action="#" class="hit__form">
+              <p class="hit__price">35 000р.</p>
+              <a href="#" class="btn-border hit__btn">Купить</a>
+            </form>
+          </li>
+          <li class="catalog__item">
+            <div class="hit__labels">
+              <div class="hit__label"></div>
+            </div>
+            <a href="#" class="hit__link">
+              <figure class="hit__img">
+                <img src="img/images/img-4.jpg" alt="Казан чугунный">
+              </figure>
+              <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+            </a>
+            <form action="#" class="hit__form">
+              <p class="hit__price">35 000р.</p>
+              <a href="#" class="btn-border hit__btn">Купить</a>
+            </form>
+          </li>
+        </ul>
+        
+        <nav class="pages">
+          <a href="#" class="pages__link">&laquo;</a>
+          <span class="pages__link pages__link--active">1</span>
+          <a href="#" class="pages__link">2</a>
+          <a href="#" class="pages__link">3</a>
+          <a href="#" class="pages__link">4</a>
+          <a href="#" class="pages__link">5</a>
+          <a href="#" class="pages__link">6</a>
+          <span class="pages__link">...</span>
+          <a href="#" class="pages__link">&raquo;</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__top">
+        <div class="footer__info">
+          <div class="logo">
+            <img src="img/images/logo.png" alt="Logo">
+            <strong>Производитель беседок</strong>
+          </div>
+          <p>«Модуль грилль» ведет свою деятельность на  рынке производителей беседок для отдыха. Разрабатываем дизайн, проектируем и изготовливаем беседки.</p>
+          <ul class="payment">
+            <li class="payment__item"><img src="img/images/visa.png" alt="Visa"></li>
+            <li class="payment__item"><img src="img/images/mastercard.png" alt="MasterCard"></li>
+            <li class="payment__item"><img src="img/images/wallet.png" alt="Wallet"></li>
+            <li class="payment__item"><img src="img/images/mir.png" alt="Mir"></li>
+          </ul>
+        </div>
+        <div class="footer__block footer__block--menu">
+          <p class="footer__title"><span>Каталог</span></p>
+          <ul class="footer__menu">
+            <li><a href="#">Беседки</a></li>
+            <li><a href="#">Мангалы</a></li>
+            <li><a href="#">Казаны</a></li>
+            <li><a href="#">Тандыры</a></li>
+          </ul>
+        </div>
+        <div class="footer__block footer__block--info">
+          <p class="footer__title"><span>Информация</span></p>
+          <ul class="footer__menu">
+            <li><a href="#">Скидки и акции</a></li>
+            <li><a href="#">Гарантии</a></li>
+            <li><a href="#">Полезные статьи</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О магазине</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__block footer__block--contacts">
+          <div class="footer__contacts footer__contacts--phones">
+            <a href="tel:+74999930784" class="footer__phone">8 (499)-993-07-84</a>
+            <a href="tel:+74950039721" class="footer__phone">8 (495)-003-97-21</a>
+            <a data-fancybox="" data-src="#call" href="javascript:;" class="btn-border footer__btn">Заказать звонок</a>
+          </div>
+          <div class="footer__contacts footer__contacts--address">
+            <b>Адрес</b>
+            <address>МО, Люберцы, Красная улица 1 литера С, 140000</address>
+          </div>
+          <div class="footer__contacts footer__contacts--email">
+            <b>Email</b>
+            <a href="mailto:sales@mafstore.ru" class="footer__mail">sales@mafstore.ru</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>Все права защищены © 2015 - 2020 гг. ООО "Модуль грилль"</span>
+        <ul class="social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--in" title="Instagram"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--fb" title="Facebook"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--ok" title="Odnoklassniki"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk" title="VKontakte"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Заказать звонок</p>
+    <p class="modal__subtitle">Укажите ваши контактные данные</p>
+    <form action="#" class="form">
+      <div class="form__field">
+        <label for="name" class="form__label">Ваше имя</label>
+        <input type="text" id="name" class="form__input" placeholder="Борис Джонсон" required="">
+      </div>
+      <div class="form__field">
+        <label for="tel" class="form__label">Ваш телефон</label>
+        <input type="tel" id="tel" class="form__input" placeholder="+7 900 800-70-60" required="">
+      </div>
+      <p class="form__comment">Поля обязательные для ввода <span>*</span></p>
+      <input type="checkbox" id="checkbox" class="form__checkbox" checked="">
+      <label for="checkbox" class="form__checkbox-label">Я не робот</label>
+      <button type="submit" class="btn form__btn">Заказать звонок</button>
+      <p class="form__bottom">Отправляя форму, я даю согласие на <a href="#">обработку персональных данных.</a></p>
+    </form>
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
+  <script src="js/range.js"></script>
+</body>
+</html>
