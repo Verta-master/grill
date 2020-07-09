@@ -1,0 +1,50 @@
+.filter {
+  margin-bottom: 60px;
+}
+
+.filter__btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 28px;
+  border-bottom: 1px dashed #272621;
+}
+
+.filter__btn {
+  margin-left: 30px;
+  color: #272621;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  .transition();
+  
+  svg {
+    margin-left: 13px;
+    stroke: #272621;
+    .transition();
+  }
+  
+  &:hover,
+  &:active {
+    color: @red;
+    .transition();
+    
+    svg {
+      stroke: @red;
+      .transition();
+    }
+  }
+  
+  &--active {
+    color: @red;
+    
+    svg {
+      stroke: @red;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.filter__drop {
+  display: none;
+}
