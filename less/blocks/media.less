@@ -19,6 +19,7 @@
   .promo__prev {
     display: none;
   }
+  .catalog__item,
   .diler__btn,
   .promo__info {
     margin-right: 0;
@@ -44,6 +45,10 @@
   }
   .blog__slider {
     padding-top: 70px;
+  }
+  .catalog__list {
+    margin-right: 0;
+    justify-content: space-around;
   }
 }
 
@@ -262,6 +267,11 @@
     margin-left: 10px;
     margin-right: 10px;
   }
+  .catalog .title {
+    position: static;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -293,5 +303,29 @@
     height: 100%;
     width: auto;
     max-width: none;
+  }
+  .filter__btns {
+    justify-content: space-around;
+    
+    .filter__btn {
+      margin-left: 0;
+    }
+  }
+  .filter__input {
+    width: 120px;
+    padding: 0 10px;
+  }
+  .filter__line {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .filter__clear {
+    position: absolute;
+    top: 26px;
+    right: 0;
+  }
+  .filter__item {
+    margin-top: 15px;
   }
 }
