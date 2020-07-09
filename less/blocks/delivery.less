@@ -1,0 +1,73 @@
+.delivery {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 20px;
+  
+  td {
+    width: 50%;
+    height: 42px;
+    
+    &:first-child {
+      color: rgba(39,38,33,0.7);
+    }
+  }
+}
+
+.delivery__city p,
+.delivery__articul p,
+.delivery__date p,
+.delivery__price p,
+.delivery__return p {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  padding-left: 50px;
+
+  span {
+    flex-grow: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom: 1px dashed rgba(39,38,33,0.2);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.delivery__city p::before {
+  width: 31px;
+  height: 24px;
+  background-image: url(../img/icons/delivery-1.svg);
+}
+
+.delivery__articul p::before {
+  width: 26px;
+  height: 26px;
+  background-image: url(../img/icons/delivery-2.svg);
+}
+
+.delivery__date p::before {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/icons/delivery-3.svg);
+}
+
+.delivery__price p::before {
+  width: 26px;
+  height: 26px;
+  background-image: url(../img/icons/delivery-4.svg);
+}
+
+.delivery__return p::before {
+  width: 26px;
+  height: 26px;
+  background-image: url(../img/icons/delivery-5.svg);
+}

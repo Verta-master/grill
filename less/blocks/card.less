@@ -1,0 +1,110 @@
+.card__wrap {
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__slider {
+  position: relative;
+  width: 572px;
+}
+
+.card__info {
+  width: ~"calc(100% - 667px)";
+}
+
+.card__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-family: "TT Polls", serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #272621;
+}
+
+.card__price {
+  margin-top: 23px;
+  margin-bottom: 23px;
+  font-family: "Oswald", serif;
+  font-size: 48px;
+  line-height: 1;
+  color: #272621;
+}
+
+.card__buy {
+  width: 280px;
+  height: 60px;
+  font-family: "Oswald", serif;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px dashed #FFFFFF;
+  margin-bottom: 35px;
+}
+
+.gallery-top {
+  height: 398px;
+  margin-bottom: 35px;
+}
+
+.card__slide {
+  height: auto;
+}
+
+.card__img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+    max-height: 398px;
+  }
+}
+
+.card__gallery {
+  position: relative;
+  padding-left: 59px;
+  padding-right: 59px;
+}
+
+.card__thumb {
+  height: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed rgba(26, 26, 26, 0.2);
+  box-sizing: border-box;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+    max-height: 65px;
+  }
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  border-color: @red;
+}
+
+.card__prev,
+.card__next {
+  margin-top: -20px;
+  width: 38px;
+  height: 38px;
+}
+
+.card__prev {
+  left: 0;
+}
+
+.card__next {
+  right: 0;
+}

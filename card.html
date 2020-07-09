@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>ModuleGrill</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__top">
+      <a href="#" class="logo">
+        <img src="img/images/logo.png" alt="Logo">
+        <strong>Производитель беседок</strong>
+      </a>
+      <form action="#" class="search">
+        <input type="text" class="search__input" placeholder="Поиск по сайту">
+        <button type="submit" class="search__btn"></button>
+      </form>
+      <div class="header__call">
+        <a href="tel:+74999930784" class="header__tel">8 (499)-993-07-84</a>
+        <a data-fancybox data-src="#call" href="javascript:;" class="header__order">Заказать звонок</a>
+      </div>
+      <a href="#" class="header__basket">
+        <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.85882 7.85577L24.6797 7.85577L22.5922 24H3.94636L1.85882 7.85577Z" stroke-width="2"/>
+          <path d="M19.125 9.36538C19.125 6.13133 19.0129 1 13.2693 1C7.52561 1 7.41351 6.13133 7.41351 9.36538" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span>Корзина</span>
+        <p class="header__price">5 870 Р</p>
+      </a>
+    </div>
+    <nav class="menu">
+      <div class="wrapper">
+        <button type="button" class="menu__btn"></button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Беседки</a>
+            <button type="button" class="menu__down">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"/>
+              </svg>
+            </button>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Категория 1</a></li>
+              <li class="menu__subitem"><a href="#">Категория 2</a></li>
+              <li class="menu__subitem"><a href="#">Категория 3</a></li>
+              <li class="menu__subitem"><a href="#">Категория 4</a></li>
+              <li class="menu__subitem"><a href="#">Категория 5</a></li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Мангалы</a>
+            <button type="button" class="menu__down">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"/>
+              </svg>
+            </button>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Категория 1</a></li>
+              <li class="menu__subitem"><a href="#">Категория 2</a></li>
+              <li class="menu__subitem"><a href="#">Категория 3</a></li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Казаны</a>
+            <button type="button" class="menu__down">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"/>
+              </svg>
+            </button>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Категория 1</a></li>
+              <li class="menu__subitem"><a href="#">Категория 2</a></li>
+              <li class="menu__subitem"><a href="#">Категория 3</a></li>
+              <li class="menu__subitem"><a href="#">Категория 4</a></li>
+              <li class="menu__subitem"><a href="#">Категория 5</a></li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Тандыры</a>
+            <button type="button" class="menu__down">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"/>
+              </svg>
+            </button>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Категория 1</a></li>
+              <li class="menu__subitem"><a href="#">Категория 2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <nav class="breadcrumbs">
+      <div class="wrapper">
+        <a href="#" class="breadcrumbs__link">Главная</a>
+        <a href="#" class="breadcrumbs__link">Каталог</a>
+        <span class="breadcrumbs__link">Казан чугунный 12 литров (дно круглое)</span>
+      </div>
+    </nav>
+    
+    <section class="card">
+      <div class="wrapper">
+        <div class="card__wrap">
+          <div class="card__slider">
+            <div class="hit__labels">
+              <div class="hit__label"></div>
+            </div>
+            <div class="swiper-container gallery-top">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide card__slide">
+                  <a data-fancybox="gallery" href="img/images/card-1.jpg" class="card__img">
+                    <img src="img/images/card-1.jpg" alt="Казан чугунный">
+                  </a>
+                </div>
+                <div class="swiper-slide card__slide">
+                  <a data-fancybox="gallery" href="img/images/card-2.jpg" class="card__img">
+                    <img src="img/images/card-2.jpg" alt="Казан чугунный">
+                  </a>
+                </div>
+                <div class="swiper-slide card__slide">
+                  <a data-fancybox="gallery" href="img/images/card-1.jpg" class="card__img">
+                    <img src="img/images/card-1.jpg" alt="Казан чугунный">
+                  </a>
+                </div>
+                <div class="swiper-slide card__slide">
+                  <a data-fancybox="gallery" href="img/images/card-2.jpg" class="card__img">
+                    <img src="img/images/card-2.jpg" alt="Казан чугунный">
+                  </a>
+                </div>
+                <div class="swiper-slide card__slide">
+                  <a data-fancybox="gallery" href="img/images/card-1.jpg" class="card__img">
+                    <img src="img/images/card-1.jpg" alt="Казан чугунный">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card__gallery">
+              <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide card__thumb">
+                    <img src="img/images/card-1.jpg" alt="Казан чугунный">
+                  </div>
+                  <div class="swiper-slide card__thumb">
+                    <img src="img/images/card-2.jpg" alt="Казан чугунный">
+                  </div>
+                  <div class="swiper-slide card__thumb">
+                    <img src="img/images/card-1.jpg" alt="Казан чугунный">
+                  </div>
+                  <div class="swiper-slide card__thumb">
+                    <img src="img/images/card-2.jpg" alt="Казан чугунный">
+                  </div>
+                  <div class="swiper-slide card__thumb">
+                    <img src="img/images/card-1.jpg" alt="Казан чугунный">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev card__prev"></div>
+              <div class="swiper-button-next card__next"></div>
+            </div>
+          </div>
+          
+          <div class="card__info">
+            <p class="card__title">Мангал чугунный с кованными элементами и аксесуарами</p>
+            <form action="#" class="form">
+              <div class="form__number">
+                <button type="button" class="form__num form__num--minus">&minus;</button>
+                <input type="text" class="form__value" value="12">
+                <button type="button" class="form__num form__num--plus">+</button>
+              </div>
+              <div class="card__price">35 000 руб</div>
+              <a href="#" class="btn card__buy">Купить</a>
+            </form>
+            <table class="delivery">
+              <tr>
+                <td class="delivery__city"><p>Доставка в г. Москва</p></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="delivery__articul"><p>Артикул 123460154 <span></span></p></td>
+                <td>В наличии</td>
+              </tr>
+              <tr>
+                <td class="delivery__date"><p>Срок доставки <span></span></p></td>
+                <td>После 3 июля</td>
+              </tr>
+              <tr>
+                <td class="delivery__price"><p>Стоимость доставки <span></span></p></td>
+                <td>Бесплатно</td>
+              </tr>
+              <tr>
+                <td class="delivery__return"><p>Возврат и обмен <span></span></p></td>
+                <td>14 дней</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="tabs" id="tabs">
+      <div class="wrapper">
+        <div class="tabs__block">
+          <ul class="tabs__title">
+            <li class="tabs__name"><a href="#tabs-1">Описание</a></li>
+            <li class="tabs__name"><a href="#tabs-2">Характеристики</a></li>
+            <li class="tabs__name"><a href="#tabs-3">Особенности</a></li>
+          </ul>
+          <div class="tabs__field" id="tabs-1">
+            <p class="title">Описание</p>
+            <p>Отдых на природе нередко сопровождается приготовлением шашлыка и других замечательных блюд, которые можно запечь над раскаленными углями. В этой статье мы обсудим с вами вопрос, какой мангал лучше приобрести для дачи или выезда с компанией в лес. Здесь вы найдете краткое описание удачных моделей, которые легко можно найти в магазине.</p>
+            <p>Отдых на природе нередко сопровождается приготовлением шашлыка и других замечательных блюд, которые можно запечь над раскаленными углями. В этой статье мы обсудим с вами вопрос, какой мангал лучше приобрести для дачи или выезда с компанией в лес. Здесь вы найдете краткое описание удачных моделей, которые легко можно найти в магазине.</p>
+          </div>
+          <div class="tabs__field" id="tabs-2">
+            <p class="title">Характеристики</p>
+            <table class="tabs__table">
+              <tr>
+                <td>Объём</td>
+                <td>3,5 л</td>
+              </tr>
+              <tr>
+                <td>Диамент</td>
+                <td>28 см</td>
+              </tr>
+              <tr>
+                <td>Глубина</td>
+                <td>11,5 см</td>
+              </tr>
+              <tr>
+                <td>Толщина стенки</td>
+                <td>8 мм</td>
+              </tr>
+              <tr>
+                <td>Вес</td>
+                <td>4,5 кг</td>
+              </tr>
+              <tr>
+                <td>Дно</td>
+                <td>Плоское</td>
+              </tr>
+              <tr>
+                <td>Диаметр дна</td>
+                <td>11 см</td>
+              </tr>
+              <tr>
+                <td>Материал</td>
+                <td>Чугун</td>
+              </tr>
+              <tr>
+                <td>Материал крышки</td>
+                <td>Аллюминий</td>
+              </tr>
+              <tr>
+                <td>Гарантия</td>
+                <td>Пожизненная</td>
+              </tr>
+            </table>
+          </div>
+          <div class="tabs__field" id="tabs-3">
+            <p class="title">Особенности</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__top">
+        <div class="footer__info">
+          <div class="logo">
+            <img src="img/images/logo.png" alt="Logo">
+            <strong>Производитель беседок</strong>
+          </div>
+          <p>«Модуль грилль» ведет свою деятельность на  рынке производителей беседок для отдыха. Разрабатываем дизайн, проектируем и изготовливаем беседки.</p>
+          <ul class="payment">
+            <li class="payment__item"><img src="img/images/visa.png" alt="Visa"></li>
+            <li class="payment__item"><img src="img/images/mastercard.png" alt="MasterCard"></li>
+            <li class="payment__item"><img src="img/images/wallet.png" alt="Wallet"></li>
+            <li class="payment__item"><img src="img/images/mir.png" alt="Mir"></li>
+          </ul>
+        </div>
+        <div class="footer__block footer__block--menu">
+          <p class="footer__title"><span>Каталог</span></p>
+          <ul class="footer__menu">
+            <li><a href="#">Беседки</a></li>
+            <li><a href="#">Мангалы</a></li>
+            <li><a href="#">Казаны</a></li>
+            <li><a href="#">Тандыры</a></li>
+          </ul>
+        </div>
+        <div class="footer__block footer__block--info">
+          <p class="footer__title"><span>Информация</span></p>
+          <ul class="footer__menu">
+            <li><a href="#">Скидки и акции</a></li>
+            <li><a href="#">Гарантии</a></li>
+            <li><a href="#">Полезные статьи</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О магазине</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__block footer__block--contacts">
+          <div class="footer__contacts footer__contacts--phones">
+            <a href="tel:+74999930784" class="footer__phone">8 (499)-993-07-84</a>
+            <a href="tel:+74950039721" class="footer__phone">8 (495)-003-97-21</a>
+            <a data-fancybox data-src="#call" href="javascript:;" class="btn-border footer__btn">Заказать звонок</a>
+          </div>
+          <div class="footer__contacts footer__contacts--address">
+            <b>Адрес</b>
+            <address>МО, Люберцы, Красная улица 1 литера С, 140000</address>
+          </div>
+          <div class="footer__contacts footer__contacts--email">
+            <b>Email</b>
+            <a href="mailto:sales@mafstore.ru" class="footer__mail">sales@mafstore.ru</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>Все права защищены © 2015 - 2020 гг. ООО "Модуль грилль"</span>
+        <ul class="social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--in" title="Instagram"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--fb" title="Facebook"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--ok" title="Odnoklassniki"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk" title="VKontakte"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Заказать звонок</p>
+    <p class="modal__subtitle">Укажите ваши контактные данные</p>
+    <form action="#" class="form">
+      <div class="form__field">
+        <label for="name" class="form__label">Ваше имя</label>
+        <input type="text" id="name" class="form__input" placeholder="Борис Джонсон" required>
+      </div>
+      <div class="form__field">
+        <label for="tel" class="form__label">Ваш телефон</label>
+        <input type="tel" id="tel" class="form__input" placeholder="+7 900 800-70-60" required>
+      </div>
+      <p class="form__comment">Поля обязательные для ввода <span>*</span></p>
+      <input type="checkbox" id="checkbox" class="form__checkbox" checked>
+      <label for="checkbox" class="form__checkbox-label">Я не робот</label>
+      <button type="submit" class="btn form__btn">Заказать звонок</button>
+      <p class="form__bottom">Отправляя форму, я даю согласие на <a href="#">обработку персональных данных.</a></p>
+    </form>
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <!-- Sliders -->
+  <script>
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+      breakpoints: {
+        766: {
+          slidesPerView: 3,
+        },
+        600: {
+          slidesPerView: 2,
+        }
+      }
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+      navigation: {
+        nextEl: '.card__next',
+        prevEl: '.card__prev',
+      },
+      thumbs: {
+        swiper: galleryThumbs
+      }
+    });
+    
+    var mySwiper = new Swiper ('.related__slider', {
+      navigation: {
+        nextEl: '.related__next',
+        prevEl: '.related__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 4,
+      spaceBetween: 16,
+      breakpoints: {
+        1200: {
+          slidesPerView: 3,
+        },
+        1022: {
+          slidesPerView: 2,
+        },
+        600: {
+          slidesPerView: 1,
+        }
+      }
+    });
+  </script>
+  
+  <!-- Tabs -->
+  <script>
+    $(function() {
+      $("#tabs").tabs();
+    });
+  </script>
+</body>
+</html>
