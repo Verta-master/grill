@@ -2085,7 +2085,7 @@ a.breadcrumbs__link:active {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 55px;
-  padding-bottom: 55px;
+  padding-bottom: 35px;
 }
 .filter__radio {
   display: none;
@@ -2094,6 +2094,7 @@ a.breadcrumbs__link:active {
   display: block;
   position: relative;
   margin-right: 60px;
+  margin-bottom: 20px;
   padding-left: 50px;
   font-size: 14px;
   line-height: 20px;
@@ -2191,6 +2192,7 @@ a.breadcrumbs__link:active {
   outline: none;
 }
 .filter__range .ui-slider .ui-slider-handle:last-of-type {
+  margin-left: -15px;
   border-color: #DC1E1E;
 }
 .filter__range .ui-slider .ui-slider-range {
@@ -2256,6 +2258,7 @@ a.breadcrumbs__link:active {
   .promo__prev {
     display: none;
   }
+  .catalog__item,
   .diler__btn,
   .promo__info {
     margin-right: 0;
@@ -2282,6 +2285,11 @@ a.breadcrumbs__link:active {
   }
   .blog__slider {
     padding-top: 70px;
+  }
+  .catalog__list {
+    margin-right: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media (max-width: 1022px) {
@@ -2525,6 +2533,11 @@ a.breadcrumbs__link:active {
     margin-left: 10px;
     margin-right: 10px;
   }
+  .catalog .title {
+    position: static;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
 }
 @media (max-width: 480px) {
   .promo__title {
@@ -2555,5 +2568,34 @@ a.breadcrumbs__link:active {
     height: 100%;
     width: auto;
     max-width: none;
+  }
+  .filter__btns {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .filter__btns .filter__btn {
+    margin-left: 0;
+  }
+  .filter__input {
+    width: 120px;
+    padding: 0 10px;
+  }
+  .filter__line {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .filter__clear {
+    position: absolute;
+    top: 26px;
+    right: 0;
+  }
+  .filter__item {
+    margin-top: 15px;
   }
 }
