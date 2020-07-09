@@ -1925,6 +1925,35 @@ h2,
 .form__bottom a:active {
   text-decoration: underline;
 }
+.form__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 169px;
+  border: 1px solid rgba(26, 26, 26, 0.2);
+}
+.form__num {
+  width: 30%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #DC1E1E;
+  font-size: 36px;
+}
+.form__num:hover,
+.form__num:active {
+  color: #272621;
+}
+.form__value {
+  width: 40%;
+  height: 40px;
+  font-family: "Oswald", serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #272621;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+}
 .catalog {
   margin-bottom: 70px;
 }
@@ -2234,6 +2263,236 @@ a.breadcrumbs__link:active {
 }
 .filter__range .ui-widget.ui-widget-content {
   border: 0;
+}
+.card__wrap {
+  margin-bottom: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.card__slider {
+  position: relative;
+  width: 572px;
+}
+.card__info {
+  width: calc(100% - 667px);
+}
+.card__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-family: "TT Polls", serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #272621;
+}
+.card__price {
+  margin-top: 23px;
+  margin-bottom: 23px;
+  font-family: "Oswald", serif;
+  font-size: 48px;
+  line-height: 1;
+  color: #272621;
+}
+.card__buy {
+  width: 280px;
+  height: 60px;
+  font-family: "Oswald", serif;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px dashed #FFFFFF;
+  margin-bottom: 35px;
+}
+.gallery-top {
+  height: 398px;
+  margin-bottom: 35px;
+}
+.card__slide {
+  height: auto;
+}
+.card__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card__img img {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  max-height: 398px;
+}
+.card__gallery {
+  position: relative;
+  padding-left: 59px;
+  padding-right: 59px;
+}
+.card__thumb {
+  height: 73px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px dashed rgba(26, 26, 26, 0.2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+.card__thumb img {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  max-height: 65px;
+}
+.gallery-thumbs .swiper-slide-thumb-active {
+  border-color: #DC1E1E;
+}
+.card__prev,
+.card__next {
+  margin-top: -20px;
+  width: 38px;
+  height: 38px;
+}
+.card__prev {
+  left: 0;
+}
+.card__next {
+  right: 0;
+}
+.tabs__block {
+  margin-bottom: 30px;
+}
+.tabs__title {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #C4C4C4;
+}
+.tabs__title .ui-tabs-active a {
+  color: #272621;
+}
+.tabs__name {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+.tabs__name a {
+  outline: none;
+  display: block;
+  padding-bottom: 29px;
+  font-family: "TT Polls", serif;
+  font-size: 24px;
+  line-height: 1;
+  color: rgba(39, 38, 33, 0.5);
+}
+.tabs__field .title {
+  text-align: center;
+}
+.delivery {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 20px;
+}
+.delivery td {
+  width: 50%;
+  height: 42px;
+}
+.delivery td:first-child {
+  color: rgba(39, 38, 33, 0.7);
+}
+.delivery__city p,
+.delivery__articul p,
+.delivery__date p,
+.delivery__price p,
+.delivery__return p {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-left: 50px;
+}
+.delivery__city p span,
+.delivery__articul p span,
+.delivery__date p span,
+.delivery__price p span,
+.delivery__return p span {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-bottom: 1px dashed rgba(39, 38, 33, 0.2);
+}
+.delivery__city p::before,
+.delivery__articul p::before,
+.delivery__date p::before,
+.delivery__price p::before,
+.delivery__return p::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.delivery__city p::before {
+  width: 31px;
+  height: 24px;
+  background-image: url(../img/icons/delivery-1.svg);
+}
+.delivery__articul p::before {
+  width: 26px;
+  height: 26px;
+  background-image: url(../img/icons/delivery-2.svg);
+}
+.delivery__date p::before {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/icons/delivery-3.svg);
+}
+.delivery__price p::before {
+  width: 26px;
+  height: 26px;
+  background-image: url(../img/icons/delivery-4.svg);
+}
+.delivery__return p::before {
+  width: 26px;
+  height: 26px;
+  background-image: url(../img/icons/delivery-5.svg);
 }
 @media (max-width: 1200px) {
   .wrapper {
