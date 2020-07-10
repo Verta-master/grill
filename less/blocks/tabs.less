@@ -1,5 +1,11 @@
+.tabs {
+  margin-bottom: 45px;
+}
+
 .tabs__block {
-  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tabs__title {
@@ -8,11 +14,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 63px;
   border-bottom: 2px solid #C4C4C4;
   
   .ui-tabs-active a {
     color: #272621;
+    
+    &::after {
+      display: block;
+    }
   }
 }
 
@@ -21,18 +31,59 @@
   margin-right: 32px;
   
   a {
+    position: relative;
     outline: none;
     display: block;
-    padding-bottom: 29px;
+    padding-bottom: 32px;
     font-family: "TT Polls", serif;
     font-size: 24px;
     line-height: 1;
     color: rgba(39,38,33,0.5);
+    
+    &::after {
+      content: "";
+      display: none;
+      position: absolute;
+      bottom: -1px;
+      left: -16px;
+      right: -16px;
+      height: 4px;
+      background-color: @red;
+    }
   }
 }
 
 .tabs__field {
   .title {
     text-align: center;
+  }
+}
+
+.tabs__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Oswald", serif;
+  
+  td {
+    height: 50px;
+    padding: 0 14px;
+    
+    &:first-child {
+      width: 38%;
+      color: #272621;
+    }
+    
+    &:last-child {
+      width: 62%;
+      font-weight: 300;
+      background-image: url(../img/icons/plus.svg);
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+      background-position: right 25px center;
+    }
+  }
+  
+  tr:nth-child(2n + 1) {
+    background-color: #F2EFEA;
   }
 }
