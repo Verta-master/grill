@@ -53,6 +53,12 @@
   .card__info {
     width: ~"calc(100% - 600px)";
   }
+  .basket__total {
+    position: static;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 1022px) {
@@ -289,12 +295,51 @@
     flex-direction: column;
   }
   .tabs__name {
-//    width: 100%;
     margin: 0;
     text-align: center;
   }
   .tabs__name a::after {
     bottom: 20px;
+  }
+  .basket__table,
+  .basket__table tbody,
+  .basket__table td {
+    display: block;
+  }
+  .basket__table tr {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px dashed rgba(26, 26, 26, 0.3);
+  }
+  .basket__table td {
+    position: static;
+    height: auto;
+    border: 0;
+    padding: 15px 0;
+  }
+  .basket__info {
+    width: 100%;
+  }
+  .basket__table td:last-child {
+    padding: 0;
+  }
+  .basket__remove {
+    position: absolute;
+    top: 15px;
+    right: 0;
+  }
+  .basket__field {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    
+    .filter__radio-label {
+      margin-right: 0;
+    }
+  }
+  .basket__line {
+    margin-right: 0;
   }
 }
 
@@ -392,5 +437,8 @@
   .tabs__table td:first-child,
   .tabs__table td:last-child {
     width: 50%;
+  }
+  .basket__itogo span {
+    font-size: 36px;
   }
 }
