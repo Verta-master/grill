@@ -2555,6 +2555,10 @@ a.breadcrumbs__link:active {
   overflow: hidden;
   margin-bottom: 40px;
 }
+.basket h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
 .basket__wrap {
   position: relative;
 }
@@ -2629,6 +2633,7 @@ a.breadcrumbs__link:active {
   color: #DC1E1E;
 }
 .basket__remove {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2650,6 +2655,7 @@ a.breadcrumbs__link:active {
   fill: #272621;
   width: 11px;
   height: 11px;
+  display: block;
   margin-left: 13px;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
@@ -2672,10 +2678,11 @@ a.breadcrumbs__link:active {
   top: 0;
   right: 0;
   width: 370px;
+  max-width: 100%;
   border: 1px dashed rgba(26, 26, 26, 0.3);
 }
 .basket__bottom {
-  padding: 30px;
+  padding: 35px 30px;
   border-top: 1px dashed rgba(26, 26, 26, 0.3);
 }
 .basket__itogo {
@@ -2684,6 +2691,7 @@ a.breadcrumbs__link:active {
   color: #272621;
   font-size: 24px;
   line-height: 1;
+  text-align: center;
 }
 .basket__itogo span {
   font-weight: 300;
@@ -2691,12 +2699,12 @@ a.breadcrumbs__link:active {
 }
 .basket__sum {
   width: 100%;
-  padding: 30px;
+  padding: 25px 30px;
   font-size: 14px;
   color: #242B33;
 }
 .basket__sum td {
-  height: 30px;
+  height: 35px;
 }
 .basket__sum td:first-child {
   font-weight: 600;
@@ -2837,6 +2845,12 @@ a.breadcrumbs__link:active {
   }
   .card__info {
     width: calc(100% - 600px);
+  }
+  .basket__total {
+    position: static;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (max-width: 1022px) {
@@ -3108,6 +3122,48 @@ a.breadcrumbs__link:active {
   .tabs__name a::after {
     bottom: 20px;
   }
+  .basket__table,
+  .basket__table tbody,
+  .basket__table td {
+    display: block;
+  }
+  .basket__table tr {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-bottom: 1px dashed rgba(26, 26, 26, 0.3);
+  }
+  .basket__table td {
+    position: static;
+    height: auto;
+    border: 0;
+    padding: 15px 0;
+  }
+  .basket__info {
+    width: 100%;
+  }
+  .basket__table td:last-child {
+    padding: 0;
+  }
+  .basket__remove {
+    position: absolute;
+    top: 15px;
+    right: 0;
+  }
+  .basket__field {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .basket__field .filter__radio-label {
+    margin-right: 0;
+  }
+  .basket__line {
+    margin-right: 0;
+  }
 }
 @media (max-width: 480px) {
   .promo__title {
@@ -3208,5 +3264,8 @@ a.breadcrumbs__link:active {
   .tabs__table td:first-child,
   .tabs__table td:last-child {
     width: 50%;
+  }
+  .basket__itogo span {
+    font-size: 36px;
   }
 }
