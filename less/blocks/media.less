@@ -50,6 +50,9 @@
     margin-right: 0;
     justify-content: space-around;
   }
+  .card__info {
+    width: ~"calc(100% - 600px)";
+  }
 }
 
 @media (max-width: 1022px) {
@@ -211,6 +214,16 @@
       }
     }
   }
+  .card__info,
+  .card__slider {
+    width: 100%;
+  }
+  .card__wrap {
+    display: block;
+  }
+  .card__slider {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 766px) {
@@ -272,6 +285,17 @@
     margin-bottom: 20px;
     max-width: 100%;
   }
+  .tabs__title {
+    flex-direction: column;
+  }
+  .tabs__name {
+//    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .tabs__name a::after {
+    bottom: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -327,5 +351,46 @@
   }
   .filter__item {
     margin-top: 15px;
+  }
+  .gallery-top {
+    height: 250px;
+  }
+  .card__slider .hit__labels {
+    top: 0;
+    left: 0;
+  }
+  .card__wrap {
+    padding-top: 0;
+  }
+  .delivery,
+  .delivery tbody,
+  .delivery tr,
+  .delivery td {
+    display: block;
+  }
+  .delivery td:first-child,
+  .delivery td:last-child {
+    width: 100%;
+    height: auto;
+  }
+  .delivery__articul p span,
+  .delivery__city p span,
+  .delivery__date p span,
+  .delivery__price p span,
+  .delivery__return p span {
+    display: none;
+  }
+  .delivery tr {
+    margin-bottom: 20px;
+  }
+  .delivery td:last-child {
+    padding-left: 50px;
+  }
+  .tabs__table td:last-child {
+    background-image: none;
+  }
+  .tabs__table td:first-child,
+  .tabs__table td:last-child {
+    width: 50%;
   }
 }
