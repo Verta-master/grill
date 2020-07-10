@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ModuleGrill</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__top">
+      <a href="#" class="logo">
+        <img src="img/images/logo.png" alt="Logo">
+        <strong>Производитель беседок</strong>
+      </a>
+      <form action="#" class="search">
+        <input type="text" class="search__input" placeholder="Поиск по сайту">
+        <button type="submit" class="search__btn"></button>
+      </form>
+      <div class="header__call">
+        <a href="tel:+74999930784" class="header__tel">8 (499)-993-07-84</a>
+        <a data-fancybox="" data-src="#call" href="javascript:;" class="header__order">Заказать звонок</a>
+      </div>
+      <a href="#" class="header__basket">
+        <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.85882 7.85577L24.6797 7.85577L22.5922 24H3.94636L1.85882 7.85577Z" stroke-width="2"></path>
+          <path d="M19.125 9.36538C19.125 6.13133 19.0129 1 13.2693 1C7.52561 1 7.41351 6.13133 7.41351 9.36538" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+        <span>Корзина</span>
+        <p class="header__price">5 870 Р</p>
+      </a>
+    </div>
+    <nav class="menu">
+      <div class="wrapper">
+        <button type="button" class="menu__btn"></button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Беседки</a>
+            <button type="button" class="menu__down">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"></path>
+              </svg>
+            </button>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Категория 1</a></li>
+              <li class="menu__subitem"><a href="#">Категория 2</a></li>
+              <li class="menu__subitem"><a href="#">Категория 3</a></li>
+              <li class="menu__subitem"><a href="#">Категория 4</a></li>
+              <li class="menu__subitem"><a href="#">Категория 5</a></li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Мангалы</a>
+            <button type="button" class="menu__down">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"></path>
+              </svg>
+            </button>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Категория 1</a></li>
+              <li class="menu__subitem"><a href="#">Категория 2</a></li>
+              <li class="menu__subitem"><a href="#">Категория 3</a></li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Казаны</a>
+            <button type="button" class="menu__down">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"></path>
+              </svg>
+            </button>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Категория 1</a></li>
+              <li class="menu__subitem"><a href="#">Категория 2</a></li>
+              <li class="menu__subitem"><a href="#">Категория 3</a></li>
+              <li class="menu__subitem"><a href="#">Категория 4</a></li>
+              <li class="menu__subitem"><a href="#">Категория 5</a></li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Тандыры</a>
+            <button type="button" class="menu__down">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.6569 6.08578L7 11.7426L1.34315 6.08578" stroke-width="2"></path>
+              </svg>
+            </button>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Категория 1</a></li>
+              <li class="menu__subitem"><a href="#">Категория 2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="area area--internal">
+      <div class="wrapper">
+        <ul class="area__list">
+          <li class="area__item">
+            <a href="#" class="area__link">2,4 м<sup>2</sup></a>
+          </li>
+          <li class="area__item">
+            <a href="#" class="area__link">4 м<sup>2</sup></a>
+          </li>
+          <li class="area__item">
+            <a href="#" class="area__link">6 м<sup>2</sup></a>
+          </li>
+          <li class="area__item">
+            <a href="#" class="area__link">8 м<sup>2</sup></a>
+          </li>
+          <li class="area__item">
+            <a href="#" class="area__link">12 м<sup>2</sup></a>
+          </li>
+          <li class="area__item">
+            <a href="#" class="area__link">24 м<sup>2</sup></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="construct">
+      <div class="wrapper">
+        <div class="construct__wrap">
+          <div class="construct__pic">
+            <h1 class="title">Соберите свою беседку</h1>
+            <a data-fancybox="gallery" href="img/images/model.jpg" class="construct__img">
+              <img src="img/images/model.jpg" alt="Соберите свою беседку">
+              <div class="construct__comment"><span>На полный экран</span></div>
+            </a>
+          </div>
+          <div class="construct__info">
+            <div class="construct__top">
+              <p class="construct__title">Комплектация</p>
+              <table class="construct__table">
+                <tr>
+                  <td><p><b>Крыша</b>Двухскатная красная<span></span></p></td>
+                  <td>10 000 руб.</td>
+                </tr>
+                <tr>
+                  <td><p><b>Боковины</b>Дерево<span></span></p></td>
+                  <td>10 000 руб.</td>
+                </tr>
+                <tr>
+                  <td><p><b>Мангал</b>2м<span></span></p></td>
+                  <td>10 000 руб.</td>
+                </tr>
+                <tr>
+                  <td><p><b>Мебель</b>1 стол и 2 стула<span></span></p></td>
+                  <td>10 000 руб.</td>
+                </tr>
+              </table>
+            </div>
+            <div class="basket__bottom">
+              <p class="basket__itogo">Итого: <span>75 500 руб.</span></p>
+              <button type="submit" class="btn basket__btn">кУПИТЬ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="tabs tabs--construct" id="tabs">
+      <div class="wrapper">
+        <ul class="tabs__title">
+          <li class="tabs__name"><a href="#tabs-1">Тип крыши</a></li>
+          <li class="tabs__name"><a href="#tabs-2">Боковины</a></li>
+          <li class="tabs__name"><a href="#tabs-3">Наполнение</a></li>
+        </ul>
+        <div class="tabs__field" id="tabs-1">
+          <div class="block">
+            <p class="block__title"><b>Тип крыши:</b>Двухскатная</p>
+            <div class="block__selection">
+              <input type="radio" id="radio1" name="radio1" class="block__radio">
+              <label for="radio1" class="block__label block__label--roof">
+                <img src="img/icons/type-1.png" alt="Тип крыши">
+                <img src="img/icons/type-1red.png" alt="Тип крыши">
+              </label>
+              <input type="radio" id="radio2" name="radio1" class="block__radio" checked="">
+              <label for="radio2" class="block__label block__label--roof">
+                <img src="img/icons/type-2.png" alt="Тип крыши">
+                <img src="img/icons/type-2red.png" alt="Тип крыши">
+              </label>
+              <input type="radio" id="radio3" name="radio1" class="block__radio">
+              <label for="radio3" class="block__label block__label--roof">
+                <img src="img/icons/type-3.png" alt="Тип крыши">
+                <img src="img/icons/type-3red.png" alt="Тип крыши">
+              </label>
+              <input type="radio" id="radio4" name="radio1" class="block__radio">
+              <label for="radio4" class="block__label block__label--roof">
+                <img src="img/icons/type-4.png" alt="Тип крыши">
+                <img src="img/icons/type-4red.png" alt="Тип крыши">
+              </label>
+            </div>
+            <div class="block__delete">
+              <button type="button" class="block__remove">
+                <span>Очистить</span>
+                <svg viewBox="0 0 241.171 241.171" xml:space="preserve">
+                  <path d="M138.138,120.754l99.118-98.576c4.752-4.704,4.752-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0 l-99.033,98.492L21.095,3.699c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l99.876,99.888L3.555,220.497 c-4.74,4.704-4.74,12.319,0,17.011c4.74,4.704,12.439,4.704,17.179,0l100.152-99.599l99.551,99.563 c4.74,4.752,12.439,4.752,17.179,0c4.74-4.764,4.74-12.475,0-17.227L138.138,120.754z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="block">
+            <p class="block__title"><b>Цвет крыши:</b>Зелёная</p>
+            <div class="block__selection">
+              <input type="radio" id="radio5" name="radio2" class="block__radio" checked="">
+              <label for="radio5" class="block__label">
+                <img src="img/images/color-1.jpg" alt="Цвет крыши">
+              </label>
+              <input type="radio" id="radio6" name="radio2" class="block__radio">
+              <label for="radio6" class="block__label">
+                <img src="img/images/color-2.jpg" alt="Цвет крыши">
+              </label>
+              <input type="radio" id="radio7" name="radio2" class="block__radio">
+              <label for="radio7" class="block__label">
+                <img src="img/images/color-3.jpg" alt="Цвет крыши">
+              </label>
+            </div>
+            <div class="block__delete">
+              <button type="button" class="block__remove">
+                <span>Очистить</span>
+                <svg viewBox="0 0 241.171 241.171" xml:space="preserve">
+                  <path d="M138.138,120.754l99.118-98.576c4.752-4.704,4.752-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0 l-99.033,98.492L21.095,3.699c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l99.876,99.888L3.555,220.497 c-4.74,4.704-4.74,12.319,0,17.011c4.74,4.704,12.439,4.704,17.179,0l100.152-99.599l99.551,99.563 c4.74,4.752,12.439,4.752,17.179,0c4.74-4.764,4.74-12.475,0-17.227L138.138,120.754z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__field" id="tabs-2">
+          Боковины
+        </div>
+        <div class="tabs__field" id="tabs-3">
+          Наполнение
+        </div>
+      </div>
+    </section>
+
+    <section class="hit">
+      <div class="wrapper">
+        <p class="title">аКСЕСУАРЫ</p>
+        <div class="swiper-container hit__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide hit__slide">
+              <div class="hit__labels">
+                <div class="hit__label"></div>
+              </div>
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/img-1.jpg" alt="Казан чугунный">
+                </figure>
+                <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+              </a>
+              <form action="#" class="hit__form">
+                <p class="hit__price">35 000р.</p>
+                <a href="#" class="btn-border hit__btn">Купить</a>
+              </form>
+            </div>
+            <div class="swiper-slide hit__slide">
+              <div class="hit__labels">
+                <div class="hit__label"></div>
+              </div>
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/img-2.jpg" alt="Казан чугунный">
+                </figure>
+                <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+              </a>
+              <form action="#" class="hit__form">
+                <p class="hit__price">35 000р.</p>
+                <a href="#" class="btn-border hit__btn">Купить</a>
+              </form>
+            </div>
+            <div class="swiper-slide hit__slide">
+              <div class="hit__labels">
+                <div class="hit__label"></div>
+              </div>
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/img-3.jpg" alt="Казан чугунный">
+                </figure>
+                <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+              </a>
+              <form action="#" class="hit__form">
+                <p class="hit__price">35 000р.</p>
+                <a href="#" class="btn-border hit__btn">Купить</a>
+              </form>
+            </div>
+            <div class="swiper-slide hit__slide">
+              <div class="hit__labels">
+                <div class="hit__label"></div>
+              </div>
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/img-4.jpg" alt="Казан чугунный">
+                </figure>
+                <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+              </a>
+              <form action="#" class="hit__form">
+                <p class="hit__price">35 000р.</p>
+                <a href="#" class="btn-border hit__btn">Купить</a>
+              </form>
+            </div>
+            <div class="swiper-slide hit__slide">
+              <div class="hit__labels">
+                <div class="hit__label"></div>
+              </div>
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/img-1.jpg" alt="Казан чугунный">
+                </figure>
+                <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+              </a>
+              <form action="#" class="hit__form">
+                <p class="hit__price">35 000р.</p>
+                <a href="#" class="btn-border hit__btn">Купить</a>
+              </form>
+            </div>
+          </div>
+          <div class="swiper-button-prev hit__prev"></div>
+          <div class="swiper-button-next hit__next"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__top">
+        <div class="footer__info">
+          <div class="logo">
+            <img src="img/images/logo.png" alt="Logo">
+            <strong>Производитель беседок</strong>
+          </div>
+          <p>«Модуль грилль» ведет свою деятельность на  рынке производителей беседок для отдыха. Разрабатываем дизайн, проектируем и изготовливаем беседки.</p>
+          <ul class="payment">
+            <li class="payment__item"><img src="img/images/visa.png" alt="Visa"></li>
+            <li class="payment__item"><img src="img/images/mastercard.png" alt="MasterCard"></li>
+            <li class="payment__item"><img src="img/images/wallet.png" alt="Wallet"></li>
+            <li class="payment__item"><img src="img/images/mir.png" alt="Mir"></li>
+          </ul>
+        </div>
+        <div class="footer__block footer__block--menu">
+          <p class="footer__title"><span>Каталог</span></p>
+          <ul class="footer__menu">
+            <li><a href="#">Беседки</a></li>
+            <li><a href="#">Мангалы</a></li>
+            <li><a href="#">Казаны</a></li>
+            <li><a href="#">Тандыры</a></li>
+          </ul>
+        </div>
+        <div class="footer__block footer__block--info">
+          <p class="footer__title"><span>Информация</span></p>
+          <ul class="footer__menu">
+            <li><a href="#">Скидки и акции</a></li>
+            <li><a href="#">Гарантии</a></li>
+            <li><a href="#">Полезные статьи</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О магазине</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__block footer__block--contacts">
+          <div class="footer__contacts footer__contacts--phones">
+            <a href="tel:+74999930784" class="footer__phone">8 (499)-993-07-84</a>
+            <a href="tel:+74950039721" class="footer__phone">8 (495)-003-97-21</a>
+            <a data-fancybox="" data-src="#call" href="javascript:;" class="btn-border footer__btn">Заказать звонок</a>
+          </div>
+          <div class="footer__contacts footer__contacts--address">
+            <b>Адрес</b>
+            <address>МО, Люберцы, Красная улица 1 литера С, 140000</address>
+          </div>
+          <div class="footer__contacts footer__contacts--email">
+            <b>Email</b>
+            <a href="mailto:sales@mafstore.ru" class="footer__mail">sales@mafstore.ru</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>Все права защищены © 2015 - 2020 гг. ООО "Модуль грилль"</span>
+        <ul class="social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--in" title="Instagram"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--fb" title="Facebook"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--ok" title="Odnoklassniki"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk" title="VKontakte"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Заказать звонок</p>
+    <p class="modal__subtitle">Укажите ваши контактные данные</p>
+    <form action="#" class="form">
+      <div class="form__field">
+        <label for="name" class="form__label">Ваше имя</label>
+        <input type="text" id="name" class="form__input" placeholder="Борис Джонсон" required="">
+      </div>
+      <div class="form__field">
+        <label for="tel" class="form__label">Ваш телефон</label>
+        <input type="tel" id="tel" class="form__input" placeholder="+7 900 800-70-60" required="">
+      </div>
+      <p class="form__comment">Поля обязательные для ввода <span>*</span></p>
+      <input type="checkbox" id="checkbox" class="form__checkbox" checked="">
+      <label for="checkbox" class="form__checkbox-label">Я не робот</label>
+      <button type="submit" class="btn form__btn">Заказать звонок</button>
+      <p class="form__bottom">Отправляя форму, я даю согласие на <a href="#">обработку персональных данных.</a></p>
+    </form>
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <!-- Slider -->
+  <script>
+    var newsSwiper2 = new Swiper ('.hit__slider', {
+      navigation: {
+        nextEl: '.hit__next',
+        prevEl: '.hit__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      spaceBetween: 30,
+      slidesPerView: 4,
+        breakpoints: {
+          1022: {
+            slidesPerView: 3,
+          },
+          766: {
+            slidesPerView: 2,
+          },
+          480: {
+            slidesPerView: 1,
+          }
+        }
+    });
+  </script>
+  
+  <!-- Tabs -->
+  <script>
+    $(function() {
+      $("#tabs").tabs();
+    });
+  </script>
+</body>
+</html>
