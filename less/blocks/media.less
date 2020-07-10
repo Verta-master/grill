@@ -220,6 +220,7 @@
       }
     }
   }
+  .construct__pic,
   .card__info,
   .card__slider {
     width: 100%;
@@ -227,8 +228,27 @@
   .card__wrap {
     display: block;
   }
+  .construct__pic,
   .card__slider {
     margin-bottom: 50px;
+  }
+  .construct__wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .block {
+    flex-wrap: wrap;
+  }
+  .block__title {
+    order: 1;
+    padding-top: 0;
+  }
+  .block__delete {
+    order: 2;
+  }
+  .block__selection {
+    order: 3;
+    width: 100%;
   }
 }
 
@@ -440,5 +460,18 @@
   }
   .basket__itogo span {
     font-size: 36px;
+  }
+  .construct__pic .title {
+    font-size: 30px;
+  }
+  .construct__comment {
+    top: 0;
+  }
+  .construct__img {
+    padding-top: 30px;
+  }
+  .construct__top {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
