@@ -1044,6 +1044,9 @@ h2,
   padding-top: 20px;
   padding-bottom: 70px;
 }
+.hit .title {
+  text-align: center;
+}
 .hit__more {
   margin-left: auto;
   margin-right: auto;
@@ -2265,7 +2268,8 @@ a.breadcrumbs__link:active {
   border: 0;
 }
 .card__wrap {
-  margin-bottom: 90px;
+  margin-bottom: 85px;
+  padding-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2276,6 +2280,10 @@ a.breadcrumbs__link:active {
 .card__slider {
   position: relative;
   width: 572px;
+}
+.card__slider .hit__labels {
+  top: 20px;
+  left: 20px;
 }
 .card__info {
   width: calc(100% - 667px);
@@ -2307,7 +2315,7 @@ a.breadcrumbs__link:active {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   border: 1px dashed #FFFFFF;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 .gallery-top {
   height: 398px;
@@ -2379,8 +2387,13 @@ a.breadcrumbs__link:active {
 .card__next {
   right: 0;
 }
+.tabs {
+  margin-bottom: 45px;
+}
 .tabs__block {
-  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .tabs__title {
   margin: 0;
@@ -2395,27 +2408,65 @@ a.breadcrumbs__link:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 63px;
   border-bottom: 2px solid #C4C4C4;
 }
 .tabs__title .ui-tabs-active a {
   color: #272621;
+}
+.tabs__title .ui-tabs-active a::after {
+  display: block;
 }
 .tabs__name {
   margin-left: 32px;
   margin-right: 32px;
 }
 .tabs__name a {
+  position: relative;
   outline: none;
   display: block;
-  padding-bottom: 29px;
+  padding-bottom: 32px;
   font-family: "TT Polls", serif;
   font-size: 24px;
   line-height: 1;
   color: rgba(39, 38, 33, 0.5);
 }
+.tabs__name a::after {
+  content: "";
+  display: none;
+  position: absolute;
+  bottom: -1px;
+  left: -16px;
+  right: -16px;
+  height: 4px;
+  background-color: #DC1E1E;
+}
 .tabs__field .title {
   text-align: center;
+}
+.tabs__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Oswald", serif;
+}
+.tabs__table td {
+  height: 50px;
+  padding: 0 14px;
+}
+.tabs__table td:first-child {
+  width: 38%;
+  color: #272621;
+}
+.tabs__table td:last-child {
+  width: 62%;
+  font-weight: 300;
+  background-image: url(../img/icons/plus.svg);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: right 25px center;
+}
+.tabs__table tr:nth-child(2n + 1) {
+  background-color: #F2EFEA;
 }
 .delivery {
   width: 100%;
@@ -2424,11 +2475,14 @@ a.breadcrumbs__link:active {
   line-height: 20px;
 }
 .delivery td {
-  width: 50%;
   height: 42px;
 }
 .delivery td:first-child {
+  width: 55%;
   color: rgba(39, 38, 33, 0.7);
+}
+.delivery td:last-child {
+  width: 45%;
 }
 .delivery__city p,
 .delivery__articul p,
@@ -2437,6 +2491,7 @@ a.breadcrumbs__link:active {
 .delivery__return p {
   position: relative;
   width: 100%;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

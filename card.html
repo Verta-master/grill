@@ -271,6 +271,92 @@
       </div>
     </section>
 
+    <section class="hit">
+      <div class="wrapper">
+        <p class="title">Похожие товары</p>
+        <div class="swiper-container hit__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide hit__slide">
+              <div class="hit__labels">
+                <div class="hit__label"></div>
+              </div>
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/img-1.jpg" alt="Казан чугунный">
+                </figure>
+                <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+              </a>
+              <form action="#" class="hit__form">
+                <p class="hit__price">35 000р.</p>
+                <a href="#" class="btn-border hit__btn">Купить</a>
+              </form>
+            </div>
+            <div class="swiper-slide hit__slide">
+              <div class="hit__labels">
+                <div class="hit__label"></div>
+              </div>
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/img-2.jpg" alt="Казан чугунный">
+                </figure>
+                <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+              </a>
+              <form action="#" class="hit__form">
+                <p class="hit__price">35 000р.</p>
+                <a href="#" class="btn-border hit__btn">Купить</a>
+              </form>
+            </div>
+            <div class="swiper-slide hit__slide">
+              <div class="hit__labels">
+                <div class="hit__label"></div>
+              </div>
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/img-3.jpg" alt="Казан чугунный">
+                </figure>
+                <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+              </a>
+              <form action="#" class="hit__form">
+                <p class="hit__price">35 000р.</p>
+                <a href="#" class="btn-border hit__btn">Купить</a>
+              </form>
+            </div>
+            <div class="swiper-slide hit__slide">
+              <div class="hit__labels">
+                <div class="hit__label"></div>
+              </div>
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/img-4.jpg" alt="Казан чугунный">
+                </figure>
+                <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+              </a>
+              <form action="#" class="hit__form">
+                <p class="hit__price">35 000р.</p>
+                <a href="#" class="btn-border hit__btn">Купить</a>
+              </form>
+            </div>
+            <div class="swiper-slide hit__slide">
+              <div class="hit__labels">
+                <div class="hit__label"></div>
+              </div>
+              <a href="#" class="hit__link">
+                <figure class="hit__img">
+                  <img src="img/images/img-1.jpg" alt="Казан чугунный">
+                </figure>
+                <p class="hit__title">Казан чугунный — 12 литров (дно круглое)</p>
+              </a>
+              <form action="#" class="hit__form">
+                <p class="hit__price">35 000р.</p>
+                <a href="#" class="btn-border hit__btn">Купить</a>
+              </form>
+            </div>
+          </div>
+          <div class="swiper-button-prev hit__prev"></div>
+          <div class="swiper-button-next hit__next"></div>
+        </div>
+      </div>
+    </section>
   </main>
   
   <footer class="footer">
@@ -399,27 +485,27 @@
       }
     });
     
-    var mySwiper = new Swiper ('.related__slider', {
+    var newsSwiper2 = new Swiper ('.hit__slider', {
       navigation: {
-        nextEl: '.related__next',
-        prevEl: '.related__prev',
+        nextEl: '.hit__next',
+        prevEl: '.hit__prev',
       },
       simulateTouch: false,
       preventClicks: false,
       preventClicksPropagation: false,
+      spaceBetween: 30,
       slidesPerView: 4,
-      spaceBetween: 16,
-      breakpoints: {
-        1200: {
-          slidesPerView: 3,
-        },
-        1022: {
-          slidesPerView: 2,
-        },
-        600: {
-          slidesPerView: 1,
+        breakpoints: {
+          1022: {
+            slidesPerView: 3,
+          },
+          766: {
+            slidesPerView: 2,
+          },
+          480: {
+            slidesPerView: 1,
+          }
         }
-      }
     });
   </script>
   
