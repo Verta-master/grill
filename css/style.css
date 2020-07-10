@@ -2483,6 +2483,7 @@ a.breadcrumbs__link:active {
 }
 .delivery td:last-child {
   width: 45%;
+  color: #272621;
 }
 .delivery__city p,
 .delivery__articul p,
@@ -2604,6 +2605,9 @@ a.breadcrumbs__link:active {
     margin-right: 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .card__info {
+    width: calc(100% - 600px);
   }
 }
 @media (max-width: 1022px) {
@@ -2785,6 +2789,16 @@ a.breadcrumbs__link:active {
     background-repeat: no-repeat;
     background-size: contain;
   }
+  .card__info,
+  .card__slider {
+    width: 100%;
+  }
+  .card__wrap {
+    display: block;
+  }
+  .card__slider {
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 766px) {
   .header__top {
@@ -2852,6 +2866,19 @@ a.breadcrumbs__link:active {
     margin-bottom: 20px;
     max-width: 100%;
   }
+  .tabs__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tabs__name {
+    margin: 0;
+    text-align: center;
+  }
+  .tabs__name a::after {
+    bottom: 20px;
+  }
 }
 @media (max-width: 480px) {
   .promo__title {
@@ -2911,5 +2938,46 @@ a.breadcrumbs__link:active {
   }
   .filter__item {
     margin-top: 15px;
+  }
+  .gallery-top {
+    height: 250px;
+  }
+  .card__slider .hit__labels {
+    top: 0;
+    left: 0;
+  }
+  .card__wrap {
+    padding-top: 0;
+  }
+  .delivery,
+  .delivery tbody,
+  .delivery tr,
+  .delivery td {
+    display: block;
+  }
+  .delivery td:first-child,
+  .delivery td:last-child {
+    width: 100%;
+    height: auto;
+  }
+  .delivery__articul p span,
+  .delivery__city p span,
+  .delivery__date p span,
+  .delivery__price p span,
+  .delivery__return p span {
+    display: none;
+  }
+  .delivery tr {
+    margin-bottom: 20px;
+  }
+  .delivery td:last-child {
+    padding-left: 50px;
+  }
+  .tabs__table td:last-child {
+    background-image: none;
+  }
+  .tabs__table td:first-child,
+  .tabs__table td:last-child {
+    width: 50%;
   }
 }
